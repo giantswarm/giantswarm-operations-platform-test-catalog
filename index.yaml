@@ -181,6 +181,21 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.0.0-0b4c58d72246ed3972dff160b946d1a2b7fe9c19.tgz
     version: 0.0.0-0b4c58d72246ed3972dff160b946d1a2b7fe9c19
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.0.0-07d0d90b0774d4799681a70afe9149ea79c1a43d.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.0.0-07d0d90b0774d4799681a70afe9149ea79c1a43d.tgz-meta/README.md
+    apiVersion: v1
+    appVersion: 0.0.0-07d0d90b0774d4799681a70afe9149ea79c1a43d
+    created: "2021-11-03T13:12:51.268002394Z"
+    description: A Helm chart for area-oncall-scheduler
+    digest: ccb7897d583ffdaae5bbad77710c9a8d12ae9322f3794fb06decf5fc96981701
+    home: https://github.com/giantswarm/area-oncall-scheduler
+    name: area-oncall-scheduler
+    sources:
+    - https://github.com/giantswarm/area-oncall-scheduler
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.0.0-07d0d90b0774d4799681a70afe9149ea79c1a43d.tgz
+    version: 0.0.0-07d0d90b0774d4799681a70afe9149ea79c1a43d
   area-oncall-scheduler-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-app-0.0.0-9cefeb7c542ef4bdcec7797267f2d3e97c2da34e.tgz-meta/main.yaml
@@ -655,7 +670,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2021-09-15T09:26:52.717253342Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 1fa526f3bba3dc55ee89edb174e72ea27922a4473afe725176ad8b8b4c3e78e1
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -665,7 +681,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2021-09-16T10:30:48.611734708Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: bfd349f14c87a542d540dc29b5180e7a02a15520091ccbc08368010f692a4441
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -7314,4 +7331,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.6.4-5fe5fab39284577c3fd5c540d58286cb752aa8fe.tgz
     version: 0.6.4-5fe5fab39284577c3fd5c540d58286cb752aa8fe
-generated: "2021-11-03T13:12:12.146484733Z"
+generated: "2021-11-03T13:12:51.267253974Z"
