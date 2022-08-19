@@ -1241,7 +1241,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-06T07:08:50.708757966Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 048086d440a71988b6a3c5cba094b591cd2df8f166d369b0d9c65bb4503a0b8c
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1251,7 +1252,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-06T06:44:22.338581396Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 6fb54c17d780263f0d5ce4be32cfd3cd72b6c9b622c43914cdaa3c22c2b0c949
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1261,7 +1263,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-12T11:51:29.263857381Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 179b6108e8ae40fb9b6f8635a3a5d7e9113626c12489eeeecdc0872439c142ee
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1271,7 +1274,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-14T13:24:36.179238829Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 5fb51a9cbc5226d6e8125e8f514d40eb0b5a322067e9c31d068db99fea324520
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1281,7 +1285,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-15T07:52:04.032182552Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: 2cf52dc1216892812798db5142735b4fab3678b06de608b62560d8035f83dd92
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1291,7 +1296,8 @@ entries:
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2022-07-15T07:50:42.669220852Z"
-    description: Reverse proxy that brings several documentation components together at https://docs.giantswarm.io/
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
     digest: dff0f4a79a8b3a9bc3af5895723fb8cec72e2a082f12c071868b61dc42f0ee4c
     home: https://github.com/giantswarm/docs-proxy
     name: docs-proxy-app
@@ -1359,6 +1365,21 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/giantswarmio-nginx-app-0.5.5-4702e589e1a2ca3a525942cb7b733e1714311bb4.tgz
     version: 0.5.5-4702e589e1a2ca3a525942cb7b733e1714311bb4
+  handbook:
+  - annotations:
+      application.giantswarm.io/team: team
+    apiVersion: v1
+    appVersion: main
+    created: "2022-08-19T13:50:26.314945587Z"
+    description: A Helm chart for out handbook
+    digest: f0706d47146d4a1e235334a63021622d11b5426190132a60f5c2f13e42f1bdb8
+    home: https://github.com/giantswarm/handbook
+    name: handbook
+    sources:
+    - https://github.com/giantswarm/handbook
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/handbook-0.0.0-778b5af4b94927943e25687535e3968c9b92ba08.tgz
+    version: 0.0.0-778b5af4b94927943e25687535e3968c9b92ba08
   nginx-proxy:
   - annotations:
       application.giantswarm.io/team: atlas
@@ -1546,4 +1567,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.7.18-399c2c84915f857fcf9aa6ccb5b8c027ca3c86a4.tgz
     version: 0.7.18-399c2c84915f857fcf9aa6ccb5b8c027ca3c86a4
-generated: "2022-08-18T09:22:35.799736872Z"
+generated: "2022-08-19T13:50:26.314514917Z"
