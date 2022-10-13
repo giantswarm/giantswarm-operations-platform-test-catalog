@@ -1195,6 +1195,19 @@ entries:
     version: 0.1.1-7c51724cdb36e1103be185620de3da8ceac95d9c
   operational-load-exporter:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz-meta/main.yaml
+      application.giantswarm.io/team: horizon
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz-meta/values.schema.json
+    apiVersion: v1
+    created: "2022-10-13T16:45:31.13690513Z"
+    description: A Helm chart for operational-load-exporter
+    digest: 34c5a61dae0d3fb78e34ab1e4def16f63b628f0ca5e09d187a240a9078920071
+    home: https://github.com/giantswarm/operational-load-exporter
+    name: operational-load-exporter
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz
+    version: 0.3.0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.2.1.tgz-meta/main.yaml
       application.giantswarm.io/team: horizon
       application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.2.1.tgz-meta/values.schema.json
@@ -1339,4 +1352,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.7.19-300cdfa4be49edac4dff74b51fc10f66795fc17c.tgz
     version: 0.7.19-300cdfa4be49edac4dff74b51fc10f66795fc17c
-generated: "2022-10-13T16:44:15.949693866Z"
+generated: "2022-10-13T16:45:31.13645834Z"
