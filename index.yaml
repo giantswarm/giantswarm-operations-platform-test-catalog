@@ -261,6 +261,20 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.1.1-09fc390fc307fb38b6d298ccdf03c1cf873d7735.tgz
     version: 0.1.1-09fc390fc307fb38b6d298ccdf03c1cf873d7735
+  operational-load-exporter:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz-meta/main.yaml
+      application.giantswarm.io/team: horizon
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz-meta/values.schema.json
+    apiVersion: v1
+    created: "2023-02-06T13:54:24.228554971Z"
+    description: A Helm chart for operational-load-exporter
+    digest: b9ff95730ea8e2127fb11b3b9ec5271d9830561410dd40bccc41fb1706865e0a
+    home: https://github.com/giantswarm/operational-load-exporter
+    name: operational-load-exporter
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.3.0.tgz
+    version: 0.3.0
   schema-server:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.0.1-812298dbdb30e6dacdf316a25af85fe575c1b1dd.tgz-meta/main.yaml
@@ -402,4 +416,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.7.22-1543664ac75cfb492e9bcda8bb9fc798a618789d.tgz
     version: 0.7.22-1543664ac75cfb492e9bcda8bb9fc798a618789d
-generated: "2023-02-01T00:01:16.481669827Z"
+generated: "2023-02-06T13:54:24.227414347Z"
