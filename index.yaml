@@ -7998,6 +7998,18 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.4.1-0c81057140235dc00d596b87beb42b8e2c483fd7.tgz
     version: 1.4.1-0c81057140235dc00d596b87beb42b8e2c483fd7
   giantswarmio-nginx-app:
+  - annotations:
+      application.giantswarm.io/team: honeybadger
+    apiVersion: v1
+    appVersion: 0.0.1
+    created: "2023-11-30T13:06:55.979864835Z"
+    description: Serves redirects and a couple of static resources at https://giantswarm.io/
+    digest: abd3f76ebb065dcd0f048be96178cc351fafbdd1ae1adf0e95e5cff9f333feff
+    home: https://github.com/giantswarm/giantswarmio-nginx
+    name: giantswarmio-nginx-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/giantswarmio-nginx-app-0.5.7.tgz
+    version: 0.5.7
   - apiVersion: v1
     appVersion: 0.0.1
     created: "2023-11-10T08:54:43.063178347Z"
@@ -14379,4 +14391,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.7.31-17a613191d206d18f8cbcf1942d34588539fd4e3.tgz
     version: 0.7.31-17a613191d206d18f8cbcf1942d34588539fd4e3
-generated: "2023-11-30T13:05:56.902277272Z"
+generated: "2023-11-30T13:06:55.979455858Z"
