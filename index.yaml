@@ -3062,11 +3062,16 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/blog-app-1.2.3-049e03b517ddf252c9406f6a65161dff5060acec.tgz
     version: 1.2.3-049e03b517ddf252c9406f6a65161dff5060acec
   crsync:
-  - apiVersion: v1
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/crsync-0.8.0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/crsync-0.8.0.tgz-meta/README.md
+      application.giantswarm.io/team: honeybadger
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/crsync-0.8.0.tgz-meta/values.schema.json
+    apiVersion: v2
     appVersion: 0.8.0
-    created: "2023-11-28T15:08:39.92079057Z"
+    created: "2023-12-04T08:06:17.919026569Z"
     description: Helm chart for crsync retagging tool
-    digest: fb6100ff157b8326685a5defd9cc658ae2704487bb5c46209b909b756000625f
+    digest: 2d3fc250a0857ac6a0d7fa5e7acc5307a8e9952af2a14458e86bd787788a6dfc
     home: https://github.com/giantswarm/crsync
     name: crsync
     urls:
@@ -8908,4 +8913,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.7.31-17a613191d206d18f8cbcf1942d34588539fd4e3.tgz
     version: 0.7.31-17a613191d206d18f8cbcf1942d34588539fd4e3
-generated: "2023-12-04T07:53:16.845876307Z"
+generated: "2023-12-04T08:06:17.918057145Z"
