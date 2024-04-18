@@ -2981,6 +2981,29 @@ entries:
     version: 1.3.3-034c2543aa3fcdba27fe61ba3d3d36c73007c79a
   cloudnative-pg:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-d9fbe46fb61844206dbaf342c66aee3030cdedee.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-d9fbe46fb61844206dbaf342c66aee3030cdedee.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-d9fbe46fb61844206dbaf342c66aee3030cdedee.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.22.2
+    created: "2024-04-18T15:33:32.373735932Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.20.2
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 25c4a9cdf2dfa8dc6e61813b1a04f20b2c04b36239324651b0004597e3c9bcd9
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-d9fbe46fb61844206dbaf342c66aee3030cdedee.tgz
+    version: 0.0.1-d9fbe46fb61844206dbaf342c66aee3030cdedee
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-c86b3e3f1ca5ac8b6dc13d64e74bbeaf2886b3de.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-c86b3e3f1ca5ac8b6dc13d64e74bbeaf2886b3de.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -16424,4 +16447,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c.tgz
     version: 0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c
-generated: "2024-04-18T15:32:45.168233127Z"
+generated: "2024-04-18T15:33:32.365386387Z"
