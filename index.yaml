@@ -9136,6 +9136,27 @@ entries:
     version: 1.5.4-7d7201ffdc9d05fab99b936b0cd826a10819ba70
   edgedb:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.1.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.1.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: "4.5"
+    created: "2024-04-19T20:08:35.847186666Z"
+    description: A Helm chart for deploying the EdgeDB graph database.
+    digest: 03b533c9f8115c6cabf8bfcd7f1dc3e7692970496cebce430ea00e0eed46709f
+    home: https://github.com/giantswarm/edgedb
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: edgedb
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.1.tgz
+    version: 0.0.1
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.0-d3d9f0c67ca46046d9f4c5e287164e223778fe30.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.0-d3d9f0c67ca46046d9f4c5e287164e223778fe30.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -17152,4 +17173,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c.tgz
     version: 0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c
-generated: "2024-04-19T20:07:19.373106828Z"
+generated: "2024-04-19T20:08:35.846234955Z"
