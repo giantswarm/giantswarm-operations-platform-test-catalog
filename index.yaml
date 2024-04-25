@@ -4322,6 +4322,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-48b78f3d533bdcfde02e99a7e2492eea0f8b4a40.tgz
     version: 0.0.1-48b78f3d533bdcfde02e99a7e2492eea0f8b4a40
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-1bb21286fa4d0c0127406597ea9f5c5e4c3021e5.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-1bb21286fa4d0c0127406597ea9f5c5e4c3021e5.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-1bb21286fa4d0c0127406597ea9f5c5e4c3021e5.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.22.2
+    created: "2024-04-25T13:09:10.794777937Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.20.2
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 12ce117f28011381b26a5e607d4d9ff2ea409c4080ece1c57ca057d911f96e9f
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.1-1bb21286fa4d0c0127406597ea9f5c5e4c3021e5.tgz
+    version: 0.0.1-1bb21286fa4d0c0127406597ea9f5c5e4c3021e5
   crsync:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/crsync-0.10.0.tgz-meta/main.yaml
@@ -19631,4 +19654,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c.tgz
     version: 0.9.1-01161d7f3f19df99e33b5e7afe46382d5307727c
-generated: "2024-04-25T13:07:01.261164941Z"
+generated: "2024-04-25T13:09:10.786565275Z"
