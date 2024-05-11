@@ -15891,6 +15891,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.0-04e5a6eb2f3471aed5a80ae5bb050490c217287a.tgz
     version: 0.0.0-04e5a6eb2f3471aed5a80ae5bb050490c217287a
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.0-02abbce5c153c626ba1d79443806a64acf9bef32.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.0-02abbce5c153c626ba1d79443806a64acf9bef32.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.0-02abbce5c153c626ba1d79443806a64acf9bef32.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-05-11T00:32:26.779382117Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.0-alpha.1
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: 02ee3a1f249d09f85ad6c2b468981b5645fa6bcdcf11aa19bee2287cd8b5e13b
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.0-02abbce5c153c626ba1d79443806a64acf9bef32.tgz
+    version: 0.0.0-02abbce5c153c626ba1d79443806a64acf9bef32
   resource-police:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -17177,4 +17200,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.9.5-2648f730f7b747256876b28579440dca2f37b6d4.tgz
     version: 0.9.5-2648f730f7b747256876b28579440dca2f37b6d4
-generated: "2024-05-10T19:00:37.982737104Z"
+generated: "2024-05-11T00:32:26.772206417Z"
