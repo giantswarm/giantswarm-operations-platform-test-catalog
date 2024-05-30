@@ -6226,6 +6226,29 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3.tgz
     version: 0.0.3
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-b9eeff4c1a0dc3b401273e57840845d7ea664a08.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-b9eeff4c1a0dc3b401273e57840845d7ea664a08.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-b9eeff4c1a0dc3b401273e57840845d7ea664a08.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.23.1
+    created: "2024-05-30T20:44:00.41169571Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.21.2
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 801ddecad38e27ffc3d42985fb0d66cd1b559f79c816ef9ce157928dd9ae4a4d
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-b9eeff4c1a0dc3b401273e57840845d7ea664a08.tgz
+    version: 0.0.3-b9eeff4c1a0dc3b401273e57840845d7ea664a08
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-5770fcf34f9e27a2aa4d3cbb350445ed01543dd4.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.3-5770fcf34f9e27a2aa4d3cbb350445ed01543dd4.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -24744,4 +24767,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.9.5-2648f730f7b747256876b28579440dca2f37b6d4.tgz
     version: 0.9.5-2648f730f7b747256876b28579440dca2f37b6d4
-generated: "2024-05-30T20:43:50.377326459Z"
+generated: "2024-05-30T20:44:00.404447019Z"
