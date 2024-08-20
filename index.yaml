@@ -1761,6 +1761,29 @@ entries:
     version: 1.3.4-2ff3105e33b738b2e852ccb108e61b307ffeb8f3
   cloudnative-pg:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.6.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.6.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.6.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.23.2
+    created: "2024-08-20T21:02:34.846536433Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.21.5
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: afd35c3b8d04fc9e60b449ae0dfca331b30af68a064125cbd1793b7ef528cbfd
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.6.tgz
+    version: 0.0.6
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.5-eb4ea34f1c9102a190e8988e2102ea56cf2e388f.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.5-eb4ea34f1c9102a190e8988e2102ea56cf2e388f.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -8049,4 +8072,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.10.0-3bc40c7bc3736fa1178d5f6a4b5da41e49601437.tgz
     version: 0.10.0-3bc40c7bc3736fa1178d5f6a4b5da41e49601437
-generated: "2024-08-20T20:59:19.835220869Z"
+generated: "2024-08-20T21:02:34.837743177Z"
