@@ -7979,6 +7979,19 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-0f965c48a4abb6b7d6948b3e5028f9cb55893b21.tgz
     version: 0.4.4-0f965c48a4abb6b7d6948b3e5028f9cb55893b21
+  prow-log-aggregator:
+  - annotations:
+      application.giantswarm.io/team: honeybadger
+    apiVersion: v1
+    appVersion: 0.4.1-dev
+    created: "2024-08-23T10:12:28.315466401Z"
+    description: Extract logs from Tekton pipelines into Prow dashboards.
+    digest: be1aa845c4d4f3d9c55ca4a7781a39018ade5a8d32278d73fcdf52c2f27a71ca
+    home: https://github.com/giantswarm/prow-log-aggregator
+    name: prow-log-aggregator
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/prow-log-aggregator-0.4.0-ed3851b0dd407aed48368c7c965f74999713d773.tgz
+    version: 0.4.0-ed3851b0dd407aed48368c7c965f74999713d773
   release-exporter:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/release-exporter-0.1.1-f210745c001294549859b3c80dd08737f051bb9b.tgz-meta/main.yaml
@@ -9135,4 +9148,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.10.0-3bc40c7bc3736fa1178d5f6a4b5da41e49601437.tgz
     version: 0.10.0-3bc40c7bc3736fa1178d5f6a4b5da41e49601437
-generated: "2024-08-23T10:10:39.499537035Z"
+generated: "2024-08-23T10:12:28.314834283Z"
