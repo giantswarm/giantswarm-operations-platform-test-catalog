@@ -3013,6 +3013,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.6-00e07c996f759d33ac706aec9b991589b5daf311.tgz
     version: 0.0.6-00e07c996f759d33ac706aec9b991589b5daf311
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.0-d9013c7c901f62fadb54599630cbd310b778cfe1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.0-d9013c7c901f62fadb54599630cbd310b778cfe1.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.0-d9013c7c901f62fadb54599630cbd310b778cfe1.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.23.2
+    created: "2024-10-08T10:12:00.613545164Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.21.5
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 0864f58571ffe40fe3e8db03a5fb4d48688cbea3db6d8800b1554862040d7ae5
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.0-d9013c7c901f62fadb54599630cbd310b778cfe1.tgz
+    version: 0.0.0-d9013c7c901f62fadb54599630cbd310b778cfe1
   docs-app:
   - annotations:
       application.giantswarm.io/team: sig-docs
@@ -6121,4 +6144,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.12.0-46217536c43528ae0b7258e7d339dbd12921fc3b.tgz
     version: 0.12.0-46217536c43528ae0b7258e7d339dbd12921fc3b
-generated: "2024-10-08T10:10:08.698777192Z"
+generated: "2024-10-08T10:12:00.605335709Z"
