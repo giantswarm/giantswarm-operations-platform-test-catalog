@@ -6207,6 +6207,28 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.6.0-4351fcb6b737e20cfab5a9062e42ae72fbfadadc.tgz
     version: 1.6.0-4351fcb6b737e20cfab5a9062e42ae72fbfadadc
+  edgedb:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.3-a485f3786b65f10d12e95281bc9720bd714349e4.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.3-a485f3786b65f10d12e95281bc9720bd714349e4.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.3-a485f3786b65f10d12e95281bc9720bd714349e4.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: "4.5"
+    created: "2024-12-04T15:21:44.082436713Z"
+    description: A Helm chart for deploying the EdgeDB graph database.
+    digest: 45b60b867330b0df06f3ca7d4ec043515c3e2e595d40e5047a962f5493d91171
+    home: https://github.com/giantswarm/edgedb
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: edgedb
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.0.3-a485f3786b65f10d12e95281bc9720bd714349e4.tgz
+    version: 0.0.3-a485f3786b65f10d12e95281bc9720bd714349e4
   fe-docs:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/fe-docs-1.70.0-57566b8ef6c533c3531c52b5c2b9c5f2512c133a.tgz-meta/main.yaml
@@ -6940,4 +6962,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.12.2-794550fdee2ed66a0cd7ef5c7ba802a6626db441.tgz
     version: 0.12.2-794550fdee2ed66a0cd7ef5c7ba802a6626db441
-generated: "2024-12-04T15:03:56.768357845Z"
+generated: "2024-12-04T15:21:44.081491243Z"
