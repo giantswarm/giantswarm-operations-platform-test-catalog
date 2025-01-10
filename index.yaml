@@ -9697,6 +9697,22 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.2.0-a1430e30ca55cae0492bf48f40f25dc465c20274.tgz
     version: 0.2.0-a1430e30ca55cae0492bf48f40f25dc465c20274
+  operational-load-exporter:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-8c9ed0361a7f90a990a1a94f014b64a04b0d2348.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-8c9ed0361a7f90a990a1a94f014b64a04b0d2348.tgz-meta/README.md
+      application.giantswarm.io/team: horizon
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-8c9ed0361a7f90a990a1a94f014b64a04b0d2348.tgz-meta/values.schema.json
+    apiVersion: v1
+    created: "2025-01-10T11:51:37.011297452Z"
+    description: A Helm chart for operational-load-exporter
+    digest: 48f11a81a2f6bdf0e8e617b6f89981ca70502cd86f71861dca0cab89a45884b0
+    home: https://github.com/giantswarm/operational-load-exporter
+    icon: https://s.giantswarm.io/app-icons/prometheus/1/light.svg
+    name: operational-load-exporter
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-8c9ed0361a7f90a990a1a94f014b64a04b0d2348.tgz
+    version: 0.4.4-8c9ed0361a7f90a990a1a94f014b64a04b0d2348
   prow-log-aggregator:
   - annotations:
       application.giantswarm.io/team: honeybadger
@@ -10414,4 +10430,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.13.0-9687e3fc0989756a4865f131945207a61c98f32f.tgz
     version: 0.13.0-9687e3fc0989756a4865f131945207a61c98f32f
-generated: "2025-01-10T11:50:35.5903855Z"
+generated: "2025-01-10T11:51:37.010723773Z"
