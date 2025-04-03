@@ -8183,6 +8183,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-241b2c294d6c6d0fd9ce3910e1102545f1e47fa9.tgz
     version: 0.0.2-241b2c294d6c6d0fd9ce3910e1102545f1e47fa9
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-07544323030aa4df4cee945099190b4154dc53b8.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-07544323030aa4df4cee945099190b4154dc53b8.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-07544323030aa4df4cee945099190b4154dc53b8.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-04-03T13:40:58.40047449Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.0-alpha.1
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: a745d648d7deaeb4813a31896a9a1ff1d7fc5d997ce0dee9eef84c192882cb3e
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-07544323030aa4df4cee945099190b4154dc53b8.tgz
+    version: 0.0.2-07544323030aa4df4cee945099190b4154dc53b8
   schema-server:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.1.4-d00d4e470a6e830ef4943804f9f0d8e4e92a9a1a.tgz-meta/main.yaml
@@ -8351,4 +8374,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.15.0-0d5590860ddb14bff7e69859aa4f70e59d775d84.tgz
     version: 0.15.0-0d5590860ddb14bff7e69859aa4f70e59d775d84
-generated: "2025-04-03T13:30:49.367090827Z"
+generated: "2025-04-03T13:40:58.394379821Z"
