@@ -15096,6 +15096,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-620063fe8ae2d5e6dd3bf96d3f23fe8bbbb72185.tgz
     version: 0.0.2-620063fe8ae2d5e6dd3bf96d3f23fe8bbbb72185
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-6123c44d9f8d801fa986c57e338b064f4e8b1b38.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-6123c44d9f8d801fa986c57e338b064f4e8b1b38.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-6123c44d9f8d801fa986c57e338b064f4e8b1b38.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-07-03T15:30:11.209023041Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.0-alpha.1
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: b33e296819e08aac12e89070982e0091122f1114e11d71b9e667b3811b9fb729
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-6123c44d9f8d801fa986c57e338b064f4e8b1b38.tgz
+    version: 0.0.2-6123c44d9f8d801fa986c57e338b064f4e8b1b38
   resource-police:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -15293,4 +15316,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.15.0-28f3ab663ce10afcdbce46c1ed74f130b7c17274.tgz
     version: 0.15.0-28f3ab663ce10afcdbce46c1ed74f130b7c17274
-generated: "2025-07-03T15:28:08.506178819Z"
+generated: "2025-07-03T15:30:11.199129658Z"
