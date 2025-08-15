@@ -4021,6 +4021,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.10-5caf45f9d2e73c2358dcc01651284ca51e0787bd.tgz
     version: 0.0.10-5caf45f9d2e73c2358dcc01651284ca51e0787bd
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.10-24cdc2964989d4ab5e195f8c255a645a0e78c952.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.10-24cdc2964989d4ab5e195f8c255a645a0e78c952.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.10-24cdc2964989d4ab5e195f8c255a645a0e78c952.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 1.23.2
+    created: "2025-08-15T15:15:27.13616879Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: ""
+      version: 0.24.0
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: b775634ba34129e17d0ee3a895598060eb22768c82d310db85618490186d5149
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.10-24cdc2964989d4ab5e195f8c255a645a0e78c952.tgz
+    version: 0.0.10-24cdc2964989d4ab5e195f8c255a645a0e78c952
   docs-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.2.1669-fadd23df6899f5a5061f3383e8b1324bab03b268.tgz-meta/main.yaml
@@ -14999,4 +15022,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.16.0-054d2a74bdb6796f9a9100a8cfcb96fc7a101ed5.tgz
     version: 0.16.0-054d2a74bdb6796f9a9100a8cfcb96fc7a101ed5
-generated: "2025-08-15T15:15:15.444521731Z"
+generated: "2025-08-15T15:15:27.125265618Z"
