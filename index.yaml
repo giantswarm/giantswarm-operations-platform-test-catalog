@@ -14391,6 +14391,29 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-80f2740edffbe595eb385354f2eaf101323f8772.tgz
     version: 0.0.2-80f2740edffbe595eb385354f2eaf101323f8772
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-7b24f94e09f862e3d1173fd7b2e2f03d6c22838e.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-7b24f94e09f862e3d1173fd7b2e2f03d6c22838e.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-7b24f94e09f862e3d1173fd7b2e2f03d6c22838e.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-08-15T07:50:18.104951394Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.0-alpha.1
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: 65b6013f67d95e15b3b11dc3fe190a75ba432c208841c3febd0f093b8de2f61c
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-7b24f94e09f862e3d1173fd7b2e2f03d6c22838e.tgz
+    version: 0.0.2-7b24f94e09f862e3d1173fd7b2e2f03d6c22838e
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-65cc5c9deaaa14aafc9dda6d0c84ee5e5cbfe208.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-65cc5c9deaaa14aafc9dda6d0c84ee5e5cbfe208.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -14740,4 +14763,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.16.0-054d2a74bdb6796f9a9100a8cfcb96fc7a101ed5.tgz
     version: 0.16.0-054d2a74bdb6796f9a9100a8cfcb96fc7a101ed5
-generated: "2025-08-15T07:29:33.421066846Z"
+generated: "2025-08-15T07:50:18.095056661Z"
