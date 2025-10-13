@@ -11080,6 +11080,34 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/operational-load-exporter-0.4.4-167e49a303131e9dc56aa033c328f4b056405c0a.tgz
     version: 0.4.4-167e49a303131e9dc56aa033c328f4b056405c0a
+  plugin-barman-cloud:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.2-aba4dc98c13d8d565bd3c994250a7d1a7dd9d4a1.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.2-aba4dc98c13d8d565bd3c994250a7d1a7dd9d4a1.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.2-aba4dc98c13d8d565bd3c994250a7d1a7dd9d4a1.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.7.0
+    created: "2025-10-13T11:42:07.285037712Z"
+    dependencies:
+    - alias: pluginbarmancloud
+      condition: pluginbarmancloud.enabled
+      name: plugin-barman-cloud
+      repository: https://cloudnative-pg.io/charts
+      version: 0.2.0
+    description: A Helm chart for plugin-barman-cloud
+    digest: 227281c15595ad905f0483a970c796829300ea8c5dbed28dea1eb5ef57113edf
+    home: https://github.com/giantswarm/plugin-barman-cloud
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: plugin-barman-cloud
+    sources:
+    - https://github.com/cloudnative-pg/charts/tree/main/charts/plugin-barman-cloud
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.2-aba4dc98c13d8d565bd3c994250a7d1a7dd9d4a1.tgz
+    version: 0.0.2-aba4dc98c13d8d565bd3c994250a7d1a7dd9d4a1
   release-exporter:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/release-exporter-0.1.2-910fb5c0b59a4ba106ddc2a8891ab65abc8e70ce.tgz-meta/main.yaml
@@ -12051,4 +12079,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-022fa0a1bde47900fb1b6bd2c24bc00f7ba76709.tgz
     version: 0.17.0-022fa0a1bde47900fb1b6bd2c24bc00f7ba76709
-generated: "2025-10-13T07:14:53.489309389Z"
+generated: "2025-10-13T11:42:07.283382124Z"
