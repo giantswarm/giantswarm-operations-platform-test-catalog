@@ -14949,6 +14949,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-066f9d1e3154b49418def0daa7d4088a39038bf5.tgz
     version: 0.0.2-066f9d1e3154b49418def0daa7d4088a39038bf5
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-03f9fdffe8d46e07cd4c25fe9b5928f3afb43ca3.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-03f9fdffe8d46e07cd4c25fe9b5928f3afb43ca3.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-03f9fdffe8d46e07cd4c25fe9b5928f3afb43ca3.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-10-22T09:58:38.244694978Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.0-alpha.1
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: e67426d11466aaa3b504501f56f1c59e973c6197ceee251648e1e38bee5d779a
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.0.2-03f9fdffe8d46e07cd4c25fe9b5928f3afb43ca3.tgz
+    version: 0.0.2-03f9fdffe8d46e07cd4c25fe9b5928f3afb43ca3
   resource-police:
   - annotations:
       application.giantswarm.io/team: phoenix
@@ -15349,4 +15372,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-022fa0a1bde47900fb1b6bd2c24bc00f7ba76709.tgz
     version: 0.17.0-022fa0a1bde47900fb1b6bd2c24bc00f7ba76709
-generated: "2025-10-22T07:42:30.168847841Z"
+generated: "2025-10-22T09:58:38.236013469Z"
