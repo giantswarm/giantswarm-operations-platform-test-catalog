@@ -12710,6 +12710,33 @@ entries:
     version: 0.4.4-307908fdbba459090be897215a61a6b206e281c8
   plugin-barman-cloud:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-1bbc7a292efc3f1389242923d0d4199a26720e86.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-1bbc7a292efc3f1389242923d0d4199a26720e86.tgz-meta/README.md
+      application.giantswarm.io/team: atlas
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-1bbc7a292efc3f1389242923d0d4199a26720e86.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: 0.7.0
+    created: "2025-11-17T14:37:45.591631615Z"
+    dependencies:
+    - alias: pluginbarmancloud
+      condition: pluginbarmancloud.enabled
+      name: plugin-barman-cloud
+      repository: https://cloudnative-pg.io/charts
+      version: 0.2.0
+    description: A Helm chart for plugin-barman-cloud
+    digest: e70731a0470a4b881cc8579ba08b66fc8bf7577c6b8810e6953e60ac4ff33210
+    home: https://github.com/giantswarm/plugin-barman-cloud
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    maintainers:
+    - email: team-atlas@giantswarm.io
+      name: giantswarm/team-atlas
+    name: plugin-barman-cloud
+    sources:
+    - https://github.com/cloudnative-pg/charts/tree/main/charts/plugin-barman-cloud
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-1bbc7a292efc3f1389242923d0d4199a26720e86.tgz
+    version: 0.0.3-1bbc7a292efc3f1389242923d0d4199a26720e86
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-04512610d14bd7244f76ee1b4997eb393519f7e8.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/plugin-barman-cloud-0.0.3-04512610d14bd7244f76ee1b4997eb393519f7e8.tgz-meta/README.md
       application.giantswarm.io/team: atlas
@@ -14201,4 +14228,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970.tgz
     version: 0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970
-generated: "2025-11-17T14:23:59.664266793Z"
+generated: "2025-11-17T14:37:45.589623363Z"
