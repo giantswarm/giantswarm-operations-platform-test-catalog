@@ -13805,6 +13805,28 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.6.2-15b80bd11607432a67d8c6f307a35be303ab09b2.tgz
     version: 1.6.2-15b80bd11607432a67d8c6f307a35be303ab09b2
+  edgedb:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.1.0-98283dbf38a7c2c9c098fd3df2636f681d21d040.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.1.0-98283dbf38a7c2c9c098fd3df2636f681d21d040.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.1.0-98283dbf38a7c2c9c098fd3df2636f681d21d040.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2025-11-22T00:54:41.337753694Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: 829c59cf60bf8f1aae52141f00a4fca01416c72c5a23e9a46b4b4b492e8fe2c0
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: edgedb
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/edgedb-0.1.0-98283dbf38a7c2c9c098fd3df2636f681d21d040.tgz
+    version: 0.1.0-98283dbf38a7c2c9c098fd3df2636f681d21d040
   fe-docs:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/fe-docs-1.71.6-ff7fb3d2b64da7a69531f8ebd8422d28c95ed9c6.tgz-meta/main.yaml
@@ -16500,4 +16522,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970.tgz
     version: 0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970
-generated: "2025-11-21T18:47:19.508681672Z"
+generated: "2025-11-22T00:54:41.336228544Z"
