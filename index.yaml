@@ -14624,6 +14624,28 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/fulfillment-0.0.3.tgz
     version: 0.0.3
+  gel:
+  - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-0.1.0-48e923ad23483a110290993e951dbdb7c69383fe.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-0.1.0-48e923ad23483a110290993e951dbdb7c69383fe.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-0.1.0-48e923ad23483a110290993e951dbdb7c69383fe.tgz-meta/values.schema.json
+      config.giantswarm.io/version: 1.x.x
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2025-11-25T23:45:46.467904908Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: cdff7b95aa16beed81732d9a86fb1930163f82e796d642b0ddcd98d828ba6b6b
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: gel
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-0.1.0-48e923ad23483a110290993e951dbdb7c69383fe.tgz
+    version: 0.1.0-48e923ad23483a110290993e951dbdb7c69383fe
   giantswarmio-nginx-app:
   - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/giantswarmio-nginx-app-0.6.4-ca5d5c1ae676b499ec38df9116e0fdc6309a01d8.tgz-meta/main.yaml
@@ -16986,4 +17008,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970.tgz
     version: 0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970
-generated: "2025-11-25T23:38:36.897863988Z"
+generated: "2025-11-25T23:45:46.466830901Z"
