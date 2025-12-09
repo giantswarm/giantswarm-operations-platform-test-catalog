@@ -10554,6 +10554,27 @@ entries:
     version: 0.0.3
   gel:
   - annotations:
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/gel-app/refs/tags/v1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/gel-app/refs/tags/v1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f/helm/gel/values.schema.json
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2025-12-09T10:15:50.451388729Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: 8306fb5021838d2214869a74bd84d494c28c3378259ed66d40041465bc0dd525
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: gel
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f.tgz
+    version: 1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.0-e73f27d2d25f33e1004ab8cdd92fd2b956364a12.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.0-e73f27d2d25f33e1004ab8cdd92fd2b956364a12.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -12615,4 +12636,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970.tgz
     version: 0.17.0-43197104d95dc6e8b8ee4547fad6d1039087d970
-generated: "2025-12-09T10:03:15.42735582Z"
+generated: "2025-12-09T10:15:50.449495336Z"
