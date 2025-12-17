@@ -6633,6 +6633,24 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.115-b2346e02c254b821bb2e7395d7ed59520d991019.tgz
     version: 2.3.115-b2346e02c254b821bb2e7395d7ed59520d991019
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.115-15f59a56201d84e0b5d07c38787bb283a6dc6e6c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.115-15f59a56201d84e0b5d07c38787bb283a6dc6e6c/README.md
+      io.giantswarm.application.team: sig-docs
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.115-15f59a56201d84e0b5d07c38787bb283a6dc6e6c/helm/docs-app/values.schema.json
+    apiVersion: v1
+    appVersion: 0.0.1
+    created: "2025-12-17T15:52:00.47816891Z"
+    description: Giant Swarm documentation published at https://docs.giantswarm.io/
+    digest: e14f25e008c19cec414e452ad949e1947d63dea6527402f32ca349f45f8ebab7
+    home: https://github.com/giantswarm/docs/
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    name: docs-app
+    sources:
+    - https://github.com/giantswarm/docs
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.115-15f59a56201d84e0b5d07c38787bb283a6dc6e6c.tgz
+    version: 2.3.115-15f59a56201d84e0b5d07c38787bb283a6dc6e6c
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.114.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.114/README.md
       io.giantswarm.application.team: sig-docs
@@ -16660,4 +16678,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2025-12-17T13:36:30.30012802Z"
+generated: "2025-12-17T15:52:00.477346511Z"
