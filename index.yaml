@@ -3161,6 +3161,22 @@ entries:
     version: 0.90.2-2de1ccb7531dddd325a70bdff1a8b4b22f47b4af
   blog-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/blog-app-1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/blog/refs/tags/v1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/blog/refs/tags/v1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107/helm/blog-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107
+    created: "2026-01-05T15:24:33.066069439Z"
+    description: Serves redirects at https://blog.giantswarm.io/
+    digest: ae0f1f68fda7824b45d7df7d4041e6898f84b7fdcb8d6512532bb9c86d4c6942
+    home: https://github.com/giantswarm/blog
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    name: blog-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/blog-app-1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107.tgz
+    version: 1.4.0-6f9b95c38ed2a167ded642bd44516da43e7f3107
+  - annotations:
       application.giantswarm.io/team: honeybadger
     apiVersion: v1
     appVersion: 0.0.1
@@ -10167,4 +10183,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2026-01-05T15:22:24.818303256Z"
+generated: "2026-01-05T15:24:33.06546426Z"
