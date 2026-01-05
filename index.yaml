@@ -6209,6 +6209,23 @@ entries:
     version: 4.0.0-0a9cf73e13804e2798cd52742e66da3c2856a3ef
   docs-proxy-app:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs-proxy/refs/tags/v1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/docs-proxy/refs/tags/v1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b/helm/docs-proxy-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b
+    created: "2026-01-05T15:22:24.818890733Z"
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
+    digest: 488af0bc3391589894d23fdc02e75734e419f7adfd6d4d5e8a1fef7fe2f63ac0
+    home: https://github.com/giantswarm/docs-proxy
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: docs-proxy-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b.tgz
+    version: 1.9.0-63e9446dbda880c517c776ff28ea8565282cd10b
+  - annotations:
       application.giantswarm.io/team: honeybadger
     apiVersion: v1
     appVersion: 0.0.1
@@ -10150,4 +10167,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2026-01-05T11:55:38.46350283Z"
+generated: "2026-01-05T15:22:24.818303256Z"
