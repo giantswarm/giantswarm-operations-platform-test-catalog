@@ -9591,6 +9591,24 @@ entries:
     version: 0.14.3-3558a7056f5eef42a09076ee547e6bf50d4153e0
   nginx-proxy:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/nginx-proxy/refs/tags/v0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/nginx-proxy/refs/tags/v0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee/helm/nginx-proxy/values.schema.json
+    apiVersion: v2
+    appVersion: 0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee
+    created: "2026-01-07T08:39:47.523641245Z"
+    description: A Helm chart for nginx-proxy
+    digest: d6f41650252d0c204da2623344b2e99cb6233d66c5535a49de1c05447159cdc9
+    home: https://github.com/giantswarm/nginx-proxy
+    icon: https://s.giantswarm.io/app-icons/1/png/default-app-light.png
+    name: nginx-proxy
+    sources:
+    - https://github.com/giantswarm/nginx-proxy
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee.tgz
+    version: 0.2.0-f1c7d4eaf1a02dbb38600294e222f2bc36b792ee
+  - annotations:
       application.giantswarm.io/team: atlas
     apiVersion: v1
     appVersion: 0.2.0-b5973d8d51b173b496efebd2c838f648947d90c4
@@ -11526,4 +11544,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2026-01-07T08:38:45.652032645Z"
+generated: "2026-01-07T08:39:47.523128334Z"
