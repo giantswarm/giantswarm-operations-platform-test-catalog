@@ -7118,6 +7118,24 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.128-c8e2081f1f77b41302b43116c6aa41152c84c44a.tgz
     version: 2.3.128-c8e2081f1f77b41302b43116c6aa41152c84c44a
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.128-a0e75bc19d3c58d98c46bdc05c569c96cd8c49e8.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.128-a0e75bc19d3c58d98c46bdc05c569c96cd8c49e8/README.md
+      io.giantswarm.application.team: sig-docs
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.128-a0e75bc19d3c58d98c46bdc05c569c96cd8c49e8/helm/docs-app/values.schema.json
+    apiVersion: v1
+    appVersion: 0.0.1
+    created: "2026-01-15T23:19:59.087088068Z"
+    description: Giant Swarm documentation published at https://docs.giantswarm.io/
+    digest: 15d03b481cfca8bd298307a28ef9e41e6856276c98aa7c58f68890dc257882ce
+    home: https://github.com/giantswarm/docs/
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    name: docs-app
+    sources:
+    - https://github.com/giantswarm/docs
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.128-a0e75bc19d3c58d98c46bdc05c569c96cd8c49e8.tgz
+    version: 2.3.128-a0e75bc19d3c58d98c46bdc05c569c96cd8c49e8
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.3.128-51dbde72f05c8dcd9469e9f75bf8d21446531edc.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs/refs/tags/v2.3.128-51dbde72f05c8dcd9469e9f75bf8d21446531edc/README.md
       io.giantswarm.application.team: sig-docs
@@ -15380,4 +15398,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2026-01-15T22:00:25.007167098Z"
+generated: "2026-01-15T23:19:59.086574583Z"
