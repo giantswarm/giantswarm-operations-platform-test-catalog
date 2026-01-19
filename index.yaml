@@ -14927,6 +14927,27 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f.tgz
     version: 1.0.1-695ca235dbe55c7b2ed4fa25eb22008333dfbc6f
   - annotations:
+      config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-2eacdf9015086a9fe3a2b713752938b0f4c0ab21.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/gel-app/refs/tags/v1.0.1-2eacdf9015086a9fe3a2b713752938b0f4c0ab21/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/gel-app/refs/tags/v1.0.1-2eacdf9015086a9fe3a2b713752938b0f4c0ab21/helm/gel/values.schema.json
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2026-01-19T13:08:18.475229765Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: d5b5ac851ca1f4274f5f6350ee24925894490d8e0417523dc1c9f19d12ca9239
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: gel
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-2eacdf9015086a9fe3a2b713752938b0f4c0ab21.tgz
+    version: 1.0.1-2eacdf9015086a9fe3a2b713752938b0f4c0ab21
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.0-e73f27d2d25f33e1004ab8cdd92fd2b956364a12.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.0-e73f27d2d25f33e1004ab8cdd92fd2b956364a12.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -18050,4 +18071,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819.tgz
     version: 0.17.0-10907428c1795f1b3c8cbe72a8476969ad9f2819
-generated: "2026-01-19T13:07:58.282548562Z"
+generated: "2026-01-19T13:08:18.474271557Z"
