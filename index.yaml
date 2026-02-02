@@ -2,6 +2,24 @@ apiVersion: v1
 entries:
   area-oncall-scheduler:
   - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.25.1.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/area-oncall-scheduler/refs/tags/v0.25.1/README.md
+      io.giantswarm.application.team: phoenix
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/area-oncall-scheduler/refs/tags/v0.25.1/helm/area-oncall-scheduler/values.schema.json
+    apiVersion: v2
+    appVersion: 0.25.1
+    created: "2026-02-02T16:29:53.749781902Z"
+    description: A Helm chart for area-oncall-scheduler
+    digest: 2b58289e59744fe8aa1f4bc513c4063ad62cf02214b66d0c92aa5d7a9d10ea18
+    home: https://github.com/giantswarm/area-oncall-scheduler
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: area-oncall-scheduler
+    sources:
+    - https://github.com/giantswarm/area-oncall-scheduler
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.25.1.tgz
+    version: 0.25.1
+  - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/area-oncall-scheduler-0.25.0.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/area-oncall-scheduler/refs/tags/v0.25.0/README.md
       io.giantswarm.application.team: phoenix
@@ -16183,4 +16201,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-02T16:15:09.988545673Z"
+generated: "2026-02-02T16:29:53.748524012Z"
