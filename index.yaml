@@ -17535,6 +17535,28 @@ entries:
     version: 1.0.0-75b5f1d1182e53a1cd7c289069db85534d8f14f2
   onepassword-scim-bridge:
   - annotations:
+      application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-df7374c49017637f361715b30571cfad109db4a0.tgz-meta/main.yaml
+      application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-df7374c49017637f361715b30571cfad109db4a0.tgz-meta/README.md
+      application.giantswarm.io/team: shield
+      application.giantswarm.io/values-schema: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-df7374c49017637f361715b30571cfad109db4a0.tgz-meta/values.schema.json
+    apiVersion: v2
+    appVersion: v2.9.9
+    created: "2026-02-05T12:34:41.727950649Z"
+    dependencies:
+    - name: op-scim-bridge
+      repository: ""
+      version: 2.11.7
+    description: Giant Swarm App packaging for the 1Password SCIM bridge.
+    digest: 3a8f68fcc2f7f7fba2c3bba04bff535364d6cd1e4991282e651578bfbccb4bbc
+    home: https://github.com/giantswarm/onepassword-scim-bridge-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    name: onepassword-scim-bridge
+    sources:
+    - https://github.com/1Password/op-scim-helm
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-df7374c49017637f361715b30571cfad109db4a0.tgz
+    version: 0.0.4-df7374c49017637f361715b30571cfad109db4a0
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-c8e4f13ff0182a4d5b769a5981579ca384821599.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-c8e4f13ff0182a4d5b769a5981579ca384821599.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -19269,4 +19291,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-05T12:31:08.535965371Z"
+generated: "2026-02-05T12:34:41.715736086Z"
