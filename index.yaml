@@ -24503,6 +24503,30 @@ entries:
     version: 0.1.2-1348251a306f9aba012b0eb9c4fc461807f69c15
   reports-server:
   - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-f6d9d7737d716ebaa3f425fff4fd468f5287a767.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/f6d9d7737d716ebaa3f425fff4fd468f5287a767/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/reports-server-app/f6d9d7737d716ebaa3f425fff4fd468f5287a767/helm/reports-server/values.schema.json
+    apiVersion: v2
+    appVersion: v0.1.6
+    created: "2026-02-18T15:26:17.626168569Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.6
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: e18db3960da3f034ba4b5e3d1de79ff81d31d4b111a7ea696d10502d1dc2b89f
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-f6d9d7737d716ebaa3f425fff4fd468f5287a767.tgz
+    version: 0.1.0-f6d9d7737d716ebaa3f425fff4fd468f5287a767
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
@@ -26271,4 +26295,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-18T15:11:42.06913589Z"
+generated: "2026-02-18T15:26:17.617548227Z"
