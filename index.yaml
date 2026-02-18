@@ -17594,6 +17594,29 @@ entries:
     version: 0.0.13-441ec6aaa1c02657c3e54a9418ea797ff0f35949
   - annotations:
       config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-3b56039cb1e7eb80892f1cf1999ad20b7316cd18.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/3b56039cb1e7eb80892f1cf1999ad20b7316cd18/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/3b56039cb1e7eb80892f1cf1999ad20b7316cd18/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 1.27.1
+    created: "2026-02-18T16:26:01.692061993Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.26.1
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: cc647be6de96b7d58e3f478c1f6c6c05e7e98a01f2f13eca2fbecad6e82022fc
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-3b56039cb1e7eb80892f1cf1999ad20b7316cd18.tgz
+    version: 0.0.13-3b56039cb1e7eb80892f1cf1999ad20b7316cd18
+  - annotations:
+      config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-3acd3321b097483e3294fc1dbc77ce359c590f38.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/3acd3321b097483e3294fc1dbc77ce359c590f38/README.md
       io.giantswarm.application.team: shield
@@ -26422,4 +26445,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-18T16:25:28.534229688Z"
+generated: "2026-02-18T16:26:01.677609378Z"
