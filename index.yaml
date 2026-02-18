@@ -24082,6 +24082,30 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-328785ab99f04494f154fe771e8a6ccdf31babf1.tgz
     version: 0.0.4-328785ab99f04494f154fe771e8a6ccdf31babf1
   - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-27b485328380b72a06ee60f11c78815c24368f13.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/onepassword-scim-bridge-app/27b485328380b72a06ee60f11c78815c24368f13/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/onepassword-scim-bridge-app/27b485328380b72a06ee60f11c78815c24368f13/helm/onepassword-scim-bridge/values.schema.json
+    apiVersion: v2
+    appVersion: v2.9.9
+    created: "2026-02-18T18:08:18.633657419Z"
+    dependencies:
+    - name: op-scim-bridge
+      repository: ""
+      version: 2.11.7
+    description: Giant Swarm App packaging for the 1Password SCIM bridge.
+    digest: 2bbf7c22c669368ee9b0271bf14b63cc5a36fdb798e4faadfb20003042c0c9e8
+    home: https://github.com/giantswarm/onepassword-scim-bridge-app
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/light.svg
+    name: onepassword-scim-bridge
+    sources:
+    - https://github.com/1Password/op-scim-helm
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-27b485328380b72a06ee60f11c78815c24368f13.tgz
+    version: 0.0.4-27b485328380b72a06ee60f11c78815c24368f13
+  - annotations:
       application.giantswarm.io/metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-24ef7ec32e296bd9d855e503973914cf4eda2f42.tgz-meta/main.yaml
       application.giantswarm.io/readme: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-24ef7ec32e296bd9d855e503973914cf4eda2f42.tgz-meta/README.md
       application.giantswarm.io/team: shield
@@ -26531,4 +26555,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-18T17:37:24.782579479Z"
+generated: "2026-02-18T18:08:18.623653459Z"
