@@ -24443,6 +24443,30 @@ entries:
     version: 1.0.0-75b5f1d1182e53a1cd7c289069db85534d8f14f2
   onepassword-scim-bridge:
   - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-1.0.0-41877ed2877db6e59b31815e97ebfb60b785e833.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/onepassword-scim-bridge-app/41877ed2877db6e59b31815e97ebfb60b785e833/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/onepassword-scim-bridge-app/41877ed2877db6e59b31815e97ebfb60b785e833/helm/onepassword-scim-bridge/values.schema.json
+    apiVersion: v2
+    appVersion: v2.9.13
+    created: "2026-02-19T14:14:10.931813103Z"
+    dependencies:
+    - name: op-scim-bridge
+      repository: ""
+      version: 2.11.10
+    description: Giant Swarm App packaging for the 1Password SCIM bridge.
+    digest: 68de4b9b91f3c1e38423a7da42005804d647caa7f9a9b245591f2680b99fd80b
+    home: https://github.com/giantswarm/onepassword-scim-bridge-app
+    icon: https://s.giantswarm.io/app-icons/onepassword/1/light.png
+    name: onepassword-scim-bridge
+    sources:
+    - https://github.com/1Password/op-scim-helm
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-1.0.0-41877ed2877db6e59b31815e97ebfb60b785e833.tgz
+    version: 1.0.0-41877ed2877db6e59b31815e97ebfb60b785e833
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/onepassword-scim-bridge-0.0.4-ee79629103e97680f83af158998ed9aea66d69ed.tgz-meta/main.yaml
@@ -27686,4 +27710,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-19T14:13:42.958566185Z"
+generated: "2026-02-19T14:14:10.915225152Z"
