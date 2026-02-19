@@ -18111,6 +18111,29 @@ entries:
     version: 0.0.13-a88cc8980556eb7820a7ffc9c02df8cfc925bafb
   - annotations:
       config.giantswarm.io/version: 1.x.x
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-a40cd6686789bc5e8102b7ffb3435395847ebb0c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/a40cd6686789bc5e8102b7ffb3435395847ebb0c/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/a40cd6686789bc5e8102b7ffb3435395847ebb0c/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 1.27.1
+    created: "2026-02-19T14:13:42.973353933Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.26.1
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 08f3017d3fe2f8939c4090fcc392ac2d539e3bff4a0fcca071847026c9f54125
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-a40cd6686789bc5e8102b7ffb3435395847ebb0c.tgz
+    version: 0.0.13-a40cd6686789bc5e8102b7ffb3435395847ebb0c
+  - annotations:
+      config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-9efa74a152228e18a878856eca9115783e175888.tgz-meta/main.yaml
@@ -27663,4 +27686,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-19T14:11:05.835257396Z"
+generated: "2026-02-19T14:13:42.958566185Z"
