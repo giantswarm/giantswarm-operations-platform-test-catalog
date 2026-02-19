@@ -25814,6 +25814,30 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-f6d9d7737d716ebaa3f425fff4fd468f5287a767.tgz
     version: 0.1.0-f6d9d7737d716ebaa3f425fff4fd468f5287a767
   - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-efc5ada275f3f6a012282ff47c6539df65a09651.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/efc5ada275f3f6a012282ff47c6539df65a09651/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/reports-server-app/efc5ada275f3f6a012282ff47c6539df65a09651/helm/reports-server/values.schema.json
+    apiVersion: v2
+    appVersion: v0.1.6
+    created: "2026-02-19T14:29:41.107032785Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.6
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: 8b5bc99580fe9b0badd8742cbb10a79fb395971c4953f6a0ec6d97612d78997b
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-efc5ada275f3f6a012282ff47c6539df65a09651.tgz
+    version: 0.1.0-efc5ada275f3f6a012282ff47c6539df65a09651
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
@@ -27756,4 +27780,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-19T14:28:18.100748546Z"
+generated: "2026-02-19T14:29:41.098885174Z"
