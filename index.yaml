@@ -19793,6 +19793,30 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-49c9ba80433c2445986e858ce5ede4f7f8ce640e.tgz
     version: 0.0.13-49c9ba80433c2445986e858ce5ede4f7f8ce640e
   - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-46a00469d96aea73d9cae8ab6a2ae9215ab0166d.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/46a00469d96aea73d9cae8ab6a2ae9215ab0166d/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/46a00469d96aea73d9cae8ab6a2ae9215ab0166d/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 1.27.1
+    created: "2026-02-24T17:07:38.744418869Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.27.1
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 7a7402e38b075db5720a2de2625588c087a9420f254dcb2403f6faa1f396a266
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-46a00469d96aea73d9cae8ab6a2ae9215ab0166d.tgz
+    version: 0.0.13-46a00469d96aea73d9cae8ab6a2ae9215ab0166d
+  - annotations:
       config.giantswarm.io/version: 1.x.x
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
@@ -29848,4 +29872,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34.tgz
     version: 0.19.0-016a312007e21fba40974ba91e8cd1483f20ea34
-generated: "2026-02-24T17:07:33.6628672Z"
+generated: "2026-02-24T17:07:38.730247179Z"
