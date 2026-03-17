@@ -23053,6 +23053,28 @@ entries:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-8f130f40a3faff51214fc705430515c91fbe97b3.tgz
     version: 1.0.1-8f130f40a3faff51214fc705430515c91fbe97b3
   - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-53668abd6fc6c6baa6004e01f72a4267c985a49c.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/gel-app/53668abd6fc6c6baa6004e01f72a4267c985a49c/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/gel-app/53668abd6fc6c6baa6004e01f72a4267c985a49c/helm/gel/values.schema.json
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2026-03-17T17:51:58.291380117Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: 27819228ba12b752882c42a6ba7dcab7fec96d67c12994178b18a377abbfa1fb
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: gel
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-53668abd6fc6c6baa6004e01f72a4267c985a49c.tgz
+    version: 1.0.1-53668abd6fc6c6baa6004e01f72a4267c985a49c
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-38301500147f4135c0006f81908fa170ca3e39dc.tgz-meta/main.yaml
@@ -26657,4 +26679,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.23.0-0cf7b73deb2cdf023cb0c3b2e411dc4b6ce8355e.tgz
     version: 0.23.0-0cf7b73deb2cdf023cb0c3b2e411dc4b6ce8355e
-generated: "2026-03-17T17:49:22.904811691Z"
+generated: "2026-03-17T17:51:58.29048809Z"
