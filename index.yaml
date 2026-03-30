@@ -32417,6 +32417,30 @@ entries:
   - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-9dfdae12d1a6442741f9f942d2701a201f1e2eb7.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/9dfdae12d1a6442741f9f942d2701a201f1e2eb7/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/reports-server-app/9dfdae12d1a6442741f9f942d2701a201f1e2eb7/helm/reports-server/values.schema.json
+    apiVersion: v2
+    appVersion: v0.1.6
+    created: "2026-03-30T14:56:43.68138744Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.6
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: f28667c79f9da2705ba560aaaefc483ea08a7ed6dee3ff7971c1de4326bb51a4
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-9dfdae12d1a6442741f9f942d2701a201f1e2eb7.tgz
+    version: 0.1.0-9dfdae12d1a6442741f9f942d2701a201f1e2eb7
+  - annotations:
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.0-8b8448011c43042673136db37baede9679f81293.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/8b8448011c43042673136db37baede9679f81293/README.md
       io.giantswarm.application.team: shield
@@ -34081,4 +34105,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.23.0-0cf7b73deb2cdf023cb0c3b2e411dc4b6ce8355e.tgz
     version: 0.23.0-0cf7b73deb2cdf023cb0c3b2e411dc4b6ce8355e
-generated: "2026-03-30T13:40:52.496133876Z"
+generated: "2026-03-30T14:56:43.674132183Z"
