@@ -830,6 +830,29 @@ entries:
     version: 0.120.0-783df82e5cf31c255acc1673b1597e8582eedf66
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.120.0-6fa8a91741fd7ad6e8e9e60333b16f90fa188922.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/6fa8a91741fd7ad6e8e9e60333b16f90fa188922/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/6fa8a91741fd7ad6e8e9e60333b16f90fa188922/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.120.0-6fa8a91741fd7ad6e8e9e60333b16f90fa188922
+    created: "2026-04-07T12:29:40.076017228Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.36.0
+    description: Backstage app provided by Giant Swarm
+    digest: f71ef2ce94c93848ce7e6dfeb18e58e74dcbd723b906844d0345d0074757c03b
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.120.0-6fa8a91741fd7ad6e8e9e60333b16f90fa188922.tgz
+    version: 0.120.0-6fa8a91741fd7ad6e8e9e60333b16f90fa188922
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.120.0-6b81cfbe71feacd03cfbcb4289d6d43cb35b4a0e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/6b81cfbe71feacd03cfbcb4289d6d43cb35b4a0e/README.md
       io.giantswarm.application.team: honeybadger
@@ -19616,4 +19639,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192.tgz
     version: 0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192
-generated: "2026-04-07T09:09:38.891856822Z"
+generated: "2026-04-07T12:29:40.072596364Z"
