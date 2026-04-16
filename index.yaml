@@ -14188,6 +14188,30 @@ entries:
   - annotations:
       io.giantswarm.application.audience: giantswarm
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-de4eec7f735951ba75e1a2614f708d8c7eed20e4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/de4eec7f735951ba75e1a2614f708d8c7eed20e4/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/de4eec7f735951ba75e1a2614f708d8c7eed20e4/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 1.27.1
+    created: "2026-04-16T10:17:52.861283892Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.28.0
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: a903901423d148b6b66c37e862e5a434f1bd14d25985f48cce75c351a2f5ebfa
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-de4eec7f735951ba75e1a2614f708d8c7eed20e4.tgz
+    version: 0.0.13-de4eec7f735951ba75e1a2614f708d8c7eed20e4
+  - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.13-dced5864c1c3b473c9c1a2596ac6924a1dc31d3a.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/dced5864c1c3b473c9c1a2596ac6924a1dc31d3a/README.md
       io.giantswarm.application.team: shield
@@ -23611,4 +23635,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192.tgz
     version: 0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192
-generated: "2026-04-16T10:17:48.500724386Z"
+generated: "2026-04-16T10:17:52.850539653Z"
