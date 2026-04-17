@@ -21961,6 +21961,28 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-53668abd6fc6c6baa6004e01f72a4267c985a49c.tgz
     version: 1.0.1-53668abd6fc6c6baa6004e01f72a4267c985a49c
+  - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-0569ee9c35bf5831817aeeb3fbd9762f7b770688.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/gel-app/0569ee9c35bf5831817aeeb3fbd9762f7b770688/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/gel-app/0569ee9c35bf5831817aeeb3fbd9762f7b770688/helm/gel/values.schema.json
+    apiVersion: v2
+    appVersion: "7.0"
+    created: "2026-04-17T00:54:00.811760875Z"
+    description: A Helm chart for deploying the Gel graph database.
+    digest: 11935de5b84dad14c76c3548228c684bafcf079a2ab734bc20bcffe1ff8228c5
+    home: https://github.com/giantswarm/gel-app
+    icon: https://s.giantswarm.io/app-icons/edgedb/light.svg
+    name: gel
+    sources:
+    - https://github.com/edgedb/edgedb
+    - https://github.com/Japan7/nanak8s/tree/main/charts/edgedb
+    type: application
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/gel-1.0.1-0569ee9c35bf5831817aeeb3fbd9762f7b770688.tgz
+    version: 1.0.1-0569ee9c35bf5831817aeeb3fbd9762f7b770688
   giantswarmio-nginx-app:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/giantswarmio-nginx-app-0.7.2-a09d3215463c331d0d8d1c9f9ff2c0c3590e95e7.tgz-meta/main.yaml
@@ -24967,4 +24989,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192.tgz
     version: 0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192
-generated: "2026-04-17T00:34:55.029157629Z"
+generated: "2026-04-17T00:54:00.810240542Z"
