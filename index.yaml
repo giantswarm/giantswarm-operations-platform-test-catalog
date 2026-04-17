@@ -23022,6 +23022,27 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/giantswarmio-nginx-app-0.7.0-1f2bb7aa434b0b150a999a00dabc110874678dc5.tgz
     version: 0.7.0-1f2bb7aa434b0b150a999a00dabc110874678dc5
+  grafana-organization:
+  - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/grafana-organization-0.0.0-a1facac7a3762d51eec097d77cf27f32932454d9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/grafana-organization-app/a1facac7a3762d51eec097d77cf27f32932454d9/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/grafana-organization-app/a1facac7a3762d51eec097d77cf27f32932454d9/helm/grafana-organization/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-04-17T21:36:47.67766665Z"
+    description: Giant Swarm Observability Platform GrafanaOrganization CR.
+    digest: b582c87eeecf57486fc22f1d20faf1aec8062bc225aa404e700135720b437b07
+    home: https://github.com/giantswarm/grafana-organization-app
+    icon: https://s.giantswarm.io/app-icons/grafana/1/light.svg
+    name: grafana-organization
+    sources:
+    - https://github.com/giantswarm/grafana-organization-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/grafana-organization-0.0.0-a1facac7a3762d51eec097d77cf27f32932454d9.tgz
+    version: 0.0.0-a1facac7a3762d51eec097d77cf27f32932454d9
   handbook:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/handbook-0.14.34-e7889fe63c0597a25bdc514a7aedffe409e5d9c0.tgz-meta/main.yaml
@@ -25989,4 +26010,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192.tgz
     version: 0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192
-generated: "2026-04-17T20:48:21.766552727Z"
+generated: "2026-04-17T21:36:47.677258331Z"
