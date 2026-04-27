@@ -1066,6 +1066,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.124.3-884b42dade5a9b69f4d3a845ab69fd5f706945af.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/884b42dade5a9b69f4d3a845ab69fd5f706945af/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/884b42dade5a9b69f4d3a845ab69fd5f706945af/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.124.3-884b42dade5a9b69f4d3a845ab69fd5f706945af
+    created: "2026-04-27T15:57:48.928268075Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.38.0
+    description: Backstage app provided by Giant Swarm
+    digest: af59006b85d1f1f11c585748570f0c46191528dbb77a5f1ca91e0b1be20ac183
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.124.3-884b42dade5a9b69f4d3a845ab69fd5f706945af.tgz
+    version: 0.124.3-884b42dade5a9b69f4d3a845ab69fd5f706945af
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.124.3-4eb7bbb2c82c8260b6570d7b2efbc80be2c9b120.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/4eb7bbb2c82c8260b6570d7b2efbc80be2c9b120/README.md
       io.giantswarm.application.team: honeybadger
@@ -33090,4 +33113,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192.tgz
     version: 0.26.0-130bd0180ed1fe2d02843f0895aaf7d4d2a38192
-generated: "2026-04-27T15:53:48.739452024Z"
+generated: "2026-04-27T15:57:48.924536283Z"
