@@ -10382,6 +10382,30 @@ entries:
   - annotations:
       io.giantswarm.application.audience: giantswarm
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/refs/tags/v0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/refs/tags/v0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37
+    created: "2026-06-04T12:33:39.842191279Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.28.2
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 5360d136b3a02fec00db25019f95a9851ba6b1d68adf471114b55c0d606e45e3
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37.tgz
+    version: 0.0.14-dev.release-v0-0-x.2026-06-04.12-30-37
+  - annotations:
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.0.14-dev.main-update-chart.2026-06-04.12-13-35.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/refs/tags/v0.0.14-dev.main-update-chart.2026-06-04.12-13-35/README.md
       io.giantswarm.application.team: shield
@@ -21355,4 +21379,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-06-04T12:32:02.618596484Z"
+generated: "2026-06-04T12:33:39.827421424Z"
