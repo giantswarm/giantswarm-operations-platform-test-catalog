@@ -4196,6 +4196,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153
+    created: "2026-06-29T09:21:56.00914037Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.40.0
+    description: Backstage app provided by Giant Swarm
+    digest: 8b154b4827f0701761989ba98bf818b667deb6e6e694ae94f180b81f7768d352
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153.tgz
+    version: 0.143.3-dev.fix-sbom-d--pendencies.2026-06-29.09-06-50.h7e6a153
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.143.2-dev.muster-ui-iteration-2.2026-06-29.07-30-09.ha691042.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.143.2-dev.muster-ui-iteration-2.2026-06-29.07-30-09.ha691042/README.md
       io.giantswarm.application.team: honeybadger
@@ -42323,4 +42346,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-06-29T08:59:10.862390904Z"
+generated: "2026-06-29T09:21:56.00373747Z"
