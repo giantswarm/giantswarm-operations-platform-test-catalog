@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8
+    created: "2026-07-02T14:17:31.711631121Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: b5cb5a4d856a2cd2085802a3e208a5ceb06c9165e3953af6f121d6edde59004b
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8.tgz
+    version: 0.149.4-dev.migrate-cl--ers-to-bui.2026-07-02.14-01-00.hbde8cc8
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.149.3-dev.docs-ui-bui-skill.2026-07-02.10-53-20.hece524b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.149.3-dev.docs-ui-bui-skill.2026-07-02.10-53-20.hece524b/README.md
       io.giantswarm.application.team: honeybadger
@@ -27671,4 +27694,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-02T14:17:22.790223477Z"
+generated: "2026-07-02T14:17:31.708150708Z"
