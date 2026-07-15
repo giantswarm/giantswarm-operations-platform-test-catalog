@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa
+    created: "2026-07-15T14:03:06.911204883Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 624fdcb3762249461c096fadbb54cfdf530f15534f3ddf1ac835034e5ebb29d9
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa.tgz
+    version: 0.155.7-dev.agent-plat--ed-section.2026-07-15.13-49-50.h36800aa
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.155.7-dev.add-flux-b--ed-by-card.2026-07-15.13-45-10.h8c10002.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.155.7-dev.add-flux-b--ed-by-card.2026-07-15.13-45-10.h8c10002/README.md
       io.giantswarm.application.team: honeybadger
@@ -34113,4 +34136,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-15T13:58:08.752224275Z"
+generated: "2026-07-15T14:03:06.907823822Z"
