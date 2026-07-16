@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a
+    created: "2026-07-16T09:13:12.771835486Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 5c0295de94a1466d659be772e18e4271ab7829e306cf77272cc2d2b23c68d9f1
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a.tgz
+    version: 0.158.2-dev.flux-tree--ing-rollup.2026-07-16.09-01-25.h1c90a5a
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.157.1-dev.flux-tree--ing-rollup.2026-07-16.07-46-39.hd85e960.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.157.1-dev.flux-tree--ing-rollup.2026-07-16.07-46-39.hd85e960/README.md
       io.giantswarm.application.team: honeybadger
@@ -34888,4 +34911,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-16T09:01:38.116799214Z"
+generated: "2026-07-16T09:13:12.768066887Z"
