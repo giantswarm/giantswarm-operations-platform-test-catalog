@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe
+    created: "2026-07-16T15:30:22.630374812Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 25ccd2b6b50cf858f371a17b75bc63221e78d6fc2a1810ef3996294089a1e344
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe.tgz
+    version: 0.160.1-dev.worktree-a--migration.2026-07-16.15-18-18.h2e0dafe
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.160.1-dev.worktree-a--migration.2026-07-16.14-41-35.he3a2ff1.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.160.1-dev.worktree-a--migration.2026-07-16.14-41-35.he3a2ff1/README.md
       io.giantswarm.application.team: honeybadger
@@ -35241,4 +35264,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-16T14:56:01.219412029Z"
+generated: "2026-07-16T15:30:22.62676938Z"
