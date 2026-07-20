@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e
+    created: "2026-07-20T11:15:40.626985357Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 04fac51ac423769ebda2a939cd3813e270632618d8ef55345cefcee6a2896794
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e.tgz
+    version: 0.164.1-dev.agent-plat--tallations.2026-07-20.11-03-48.h8fbae4e
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.164.1-dev.agent-plat--tallations.2026-07-20.10-48-32.h0983dd7.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.164.1-dev.agent-plat--tallations.2026-07-20.10-48-32.h0983dd7/README.md
       io.giantswarm.application.team: honeybadger
@@ -36692,4 +36715,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-20T11:09:30.710657861Z"
+generated: "2026-07-20T11:15:40.623622428Z"
