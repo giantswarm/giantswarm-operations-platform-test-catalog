@@ -1918,6 +1918,29 @@ entries:
   backstage:
   - annotations:
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84
+    created: "2026-07-24T09:27:27.617705275Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: ed8f4344c0d02f834c9cc600f0b0416dbcf524569e412f5473e37937dccee1d5
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84.tgz
+    version: 0.167.14-dev.teams-ali--ent-branch.2026-07-24.09-13-40.hf027d84
+  - annotations:
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.167.14-dev.fix-codeb--opy-button.2026-07-24.09-11-12.h4a409e5.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.167.14-dev.fix-codeb--opy-button.2026-07-24.09-11-12.h4a409e5/README.md
       io.giantswarm.application.team: honeybadger
@@ -39410,4 +39433,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-24T09:26:52.369013237Z"
+generated: "2026-07-24T09:27:27.61279112Z"
