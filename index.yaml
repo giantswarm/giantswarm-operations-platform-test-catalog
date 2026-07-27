@@ -17456,6 +17456,36 @@ entries:
     version: 1.5.1-7f680ee57de8d42c1de6bab43e02f05fada70ec8
   cloudnative-pg:
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/cloudnative-pg-app/issues
+        - name: Upstream project
+          url: https://github.com/cloudnative-pg/charts
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.1.1-dev.teams-alignment-branch.2026-07-27.16-19-45.h6051dc4.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/refs/tags/v0.1.1-dev.teams-alignment-branch.2026-07-27.16-19-45.h6051dc4/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/cloudnative-pg-app/refs/tags/v0.1.1-dev.teams-alignment-branch.2026-07-27.16-19-45.h6051dc4/helm/cloudnative-pg/values.schema.json
+    apiVersion: v2
+    appVersion: 1.29.1
+    created: "2026-07-27T16:20:15.567806642Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.29.0
+    description: A Giant Swarm app for deploying CloudNative PostgreSQL.
+    digest: 8e5ef05680b603dc938e04927edc4dec0dc44861d8815187e6811c2146b78205
+    home: https://github.com/giantswarm/cloudnative-pg-app
+    icon: https://s.giantswarm.io/app-icons/cloudnative-pg/icon-light.svg
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.1.1-dev.teams-alignment-branch.2026-07-27.16-19-45.h6051dc4.tgz
+    version: 0.1.1-dev.teams-alignment-branch.2026-07-27.16-19-45.h6051dc4
+  - annotations:
       io.giantswarm.application.audience: giantswarm
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/cloudnative-pg-0.1.1-dev.teams-alignment-branch.2026-07-11.20-12-36.hcf1a714.tgz-meta/main.yaml
@@ -40971,4 +41001,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.29.0-144239a901142185557f2d341174105f1770d2cd.tgz
     version: 0.29.0-144239a901142185557f2d341174105f1770d2cd
-generated: "2026-07-27T16:16:30.470525644Z"
+generated: "2026-07-27T16:20:15.55703553Z"
