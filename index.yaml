@@ -115,6 +115,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491
+    created: "2026-08-03T10:01:09.335450518Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: c4401390eb055c39409a50bd115c21f948d3a554b9ec932a1564b5da5b3fbf46
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491.tgz
+    version: 0.177.1-dev.agent-plat--readiness.2026-08-03.09-49-08.h5bd0491
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.177.1-dev.agent-plat--readiness.2026-08-03.09-19-48.hf8538f4.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.177.1-dev.agent-plat--readiness.2026-08-03.09-19-48.hf8538f4/README.md
       io.giantswarm.application.team: honeybadger
@@ -18076,4 +18103,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-03T09:32:44.95890897Z"
+generated: "2026-08-03T10:01:09.330766641Z"
