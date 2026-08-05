@@ -34,6 +34,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545
+    created: "2026-08-05T12:49:14.395655339Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 67d761be9e4d1bc7abb915e1fe8667b223b7be33de4b7b07bed7207c5896b732
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545.tgz
+    version: 0.180.2-dev.add-mui-v4--reference.2026-08-05.12-36-53.h8031545
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.180.1-dev.chore-hold--act-ai-sdk.2026-08-05.12-14-01.hbe1bfba.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.180.1-dev.chore-hold--act-ai-sdk.2026-08-05.12-14-01.hbe1bfba/README.md
       io.giantswarm.application.team: honeybadger
@@ -20306,4 +20333,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-05T12:48:35.382942297Z"
+generated: "2026-08-05T12:49:14.390483549Z"
