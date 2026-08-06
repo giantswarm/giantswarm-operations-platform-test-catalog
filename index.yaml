@@ -7,6 +7,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682
+    created: "2026-08-06T13:31:07.388829754Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: d8364867d30f2c5fc3adb7055bc95a711cf6435701d2f66b0e5645366ec0d286
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682.tgz
+    version: 0.182.6-dev.fix-agent--g-ask-user.2026-08-06.13-18-15.h8314682
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd/README.md
       io.giantswarm.application.team: honeybadger
@@ -21926,4 +21953,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-06T11:35:33.81864657Z"
+generated: "2026-08-06T13:31:07.38523952Z"
