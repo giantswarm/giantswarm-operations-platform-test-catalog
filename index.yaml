@@ -7,6 +7,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd
+    created: "2026-08-06T11:35:33.822390272Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: dc27af1e9ddcb9a3d81e2dad545601ee51a8740deda64706d5439b41e1508c85
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd.tgz
+    version: 0.182.5-dev.pin-backend-base-image.2026-08-06.11-22-48.hba0f2fd
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.182.4-dev.fix-stale--le-entries.2026-08-06.09-27-56.hae767b0.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.182.4-dev.fix-stale--le-entries.2026-08-06.09-27-56.hae767b0/README.md
       io.giantswarm.application.team: honeybadger
@@ -21899,4 +21926,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-06T09:59:26.659819273Z"
+generated: "2026-08-06T11:35:33.81864657Z"
