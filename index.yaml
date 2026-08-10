@@ -61,6 +61,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0
+    created: "2026-08-10T16:31:14.367698174Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 713573cc4230f6420b2ea74263f86e178a82d308f3798bde203a222810b554a9
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0.tgz
+    version: 0.183.18-dev.feat-gian--m-branding.2026-08-10.16-19-19.ha95dba0
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.183.18-dev.feat-gian--m-branding.2026-08-10.16-16-21.h807eb28.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.183.18-dev.feat-gian--m-branding.2026-08-10.16-16-21.h807eb28/README.md
       io.giantswarm.application.team: honeybadger
@@ -24698,4 +24725,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-10T16:28:22.397022371Z"
+generated: "2026-08-10T16:31:14.362245844Z"
