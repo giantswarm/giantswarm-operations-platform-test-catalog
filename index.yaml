@@ -61,6 +61,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f
+    created: "2026-08-24T11:54:21.42767784Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 3951ef795c484685e4732ee7b7ced269804462a4d49580bbc657d4634c9a6ea2
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f.tgz
+    version: 0.190.2-dev.cluster-rbac-tab.2026-08-24.11-41-35.h684073f
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.190.1-dev.teams-alignment-branch.2026-08-24.09-06-04.h452fdc5.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.190.1-dev.teams-alignment-branch.2026-08-24.09-06-04.h452fdc5/README.md
       io.giantswarm.application.team: honeybadger
@@ -29372,4 +29399,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-24T09:33:45.347017544Z"
+generated: "2026-08-24T11:54:21.422339328Z"
