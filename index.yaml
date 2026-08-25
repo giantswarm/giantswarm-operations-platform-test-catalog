@@ -29085,6 +29085,36 @@ entries:
     version: 1.0.1-dev.teams-alignment-branch.2026-07-11.12-25-25
   reports-server:
   - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/reports-server-app/issues
+        - name: Upstream project
+          url: https://github.com/kyverno/reports-server
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/refs/tags/v0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/reports-server-app/refs/tags/v0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9/helm/reports-server/values.schema.json
+    apiVersion: v2
+    appVersion: 0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9
+    created: "2026-08-25T16:40:01.527117239Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.6
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: e090bcee5838ed7746582ce1e9b5d08dc0ee6fb285bd9dbcb5ea1056973cfb03
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9.tgz
+    version: 0.1.4-dev.teams-alignment-branch.2026-08-25.16-39-33.h231ece9
+  - annotations:
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-dev.teams-alignment-branch.2026-08-04.14-59-56.h4a47b94.tgz-meta/main.yaml
@@ -29586,4 +29616,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-25T16:36:25.358388689Z"
+generated: "2026-08-25T16:40:01.518036325Z"
