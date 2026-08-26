@@ -88,6 +88,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693
+    created: "2026-08-26T22:30:25.910756847Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 2d0daa502c8025d3f6be09cfffeb0696bd689ff01b20682ec3bd454ee5af7a97
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693.tgz
+    version: 0.192.1-dev.muster-dcr--id-method.2026-08-26.22-15-35.h835b693
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.191.6-dev.feat-vanil--idc-scopes.2026-08-26.14-08-56.h65e9138.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.191.6-dev.feat-vanil--idc-scopes.2026-08-26.14-08-56.h65e9138/README.md
       io.giantswarm.application.team: honeybadger
@@ -30377,4 +30404,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/sitesearch-2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3.tgz
     version: 2.1.0-40e12aecc99cff26c5eee3ea467602a9f75d20c3
-generated: "2026-08-26T19:43:04.919671147Z"
+generated: "2026-08-26T22:30:25.906065438Z"
