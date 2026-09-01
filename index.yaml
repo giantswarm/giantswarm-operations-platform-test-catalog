@@ -34,6 +34,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14
+    created: "2026-09-01T15:34:30.606779639Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 197896106028da2cafecddee4b1aca983fc357023a9d84b96aa3f4cc11ecaa05
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14.tgz
+    version: 0.204.3-dev.agent-platform-models.2026-09-01.15-06-31.h18f0e14
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.204.2-dev.renovate-a--i-packages.2026-09-01.12-02-54.hab1464a.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.204.2-dev.renovate-a--i-packages.2026-09-01.12-02-54.hab1464a/README.md
       io.giantswarm.application.team: honeybadger
@@ -17873,4 +17900,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-01T15:18:43.213643594Z"
+generated: "2026-09-01T15:34:30.602342496Z"
