@@ -18029,6 +18029,25 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/handbook-0.16.8.tgz
     version: 0.16.8
+  nginx-proxy:
+  - annotations:
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/nginx-proxy/refs/tags/v0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f/README.md
+      io.giantswarm.application.team: atlas
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/nginx-proxy/refs/tags/v0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f/helm/nginx-proxy/values.schema.json
+    apiVersion: v2
+    appVersion: 0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f
+    created: "2026-09-02T11:52:09.625307426Z"
+    description: A Helm chart for nginx-proxy
+    digest: 095c869cf8ec864b8b5d6b3b2f6a847d64baed53758bb18eecadaf8025e1c5a0
+    home: https://github.com/giantswarm/nginx-proxy
+    icon: https://s.giantswarm.io/app-icons/1/png/default-app-light.png
+    name: nginx-proxy
+    sources:
+    - https://github.com/giantswarm/nginx-proxy
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/nginx-proxy-0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f.tgz
+    version: 0.3.1-dev.fix-duplicate-label-keys.2026-09-02.11-51-45.h636197f
   onepassword-scim-bridge:
   - annotations:
       io.giantswarm.application.audience: giantswarm
@@ -18476,4 +18495,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-02T07:56:38.950223251Z"
+generated: "2026-09-02T11:52:09.624663239Z"
