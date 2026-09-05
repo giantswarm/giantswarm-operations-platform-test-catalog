@@ -19597,6 +19597,29 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.14.40-dev.automatic--ed-content.2026-08-03.08-17-42.h2572efb.tgz
     version: 2.14.40-dev.automatic--ed-content.2026-08-03.08-17-42.h2572efb
+  docs-proxy-app:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/docs-proxy/issues
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs-proxy/refs/tags/v1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/docs-proxy/refs/tags/v1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0/helm/docs-proxy-app/values.schema.json
+    apiVersion: v2
+    appVersion: 1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0
+    created: "2026-09-05T06:23:44.671621131Z"
+    description: Reverse proxy that brings several documentation components together
+      at https://docs.giantswarm.io/
+    digest: 486ae7effca39d9331219ba343c451080cab33d781d468ca6e9cfa5989792db5
+    home: https://github.com/giantswarm/docs-proxy
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: docs-proxy-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-proxy-app-1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0.tgz
+    version: 1.11.9-dev.teams-alignment-branch.2026-09-05.06-21-20.ha2839b0
   fe-docs:
   - annotations:
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/fe-docs-1.72.12-dev.teams-alignment-branch.2026-09-04.16-09-57.h8f9ffd4.tgz-meta/main.yaml
@@ -22646,4 +22669,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-05T04:55:07.816200725Z"
+generated: "2026-09-05T06:23:44.67093797Z"
