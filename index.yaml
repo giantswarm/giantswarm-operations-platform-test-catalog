@@ -61,6 +61,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd
+    created: "2026-09-09T10:53:49.773360726Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 56e2e883878f37646a8718c314b28d32bbe2bbbb34584b2001543f2b12ad6364
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd.tgz
+    version: 0.243.5-dev.agent-plat--pty-states.2026-09-09.10-43-29.h76a56dd
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-0.243.4-dev.teams-alignment-branch.2026-09-09.06-36-56.hd6d660b.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v0.243.4-dev.teams-alignment-branch.2026-09-09.06-36-56.hd6d660b/README.md
       io.giantswarm.application.team: honeybadger
@@ -26630,4 +26657,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-09T10:00:59.993856633Z"
+generated: "2026-09-09T10:53:49.769198144Z"
