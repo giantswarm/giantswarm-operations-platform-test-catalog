@@ -7,6 +7,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd
+    created: "2026-09-14T12:19:29.394223754Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 088028bf64ed6bc8e24514456cf8bda58340813847fd0de5d0806a4bb73314f5
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd.tgz
+    version: 2.3.3-dev.handoff-update-skills.2026-09-14.12-07-42.ha25eddd
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.3.2-dev.telemetry-edit-leak.2026-09-14.11-37-51.h7d14b1f.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.3.2-dev.telemetry-edit-leak.2026-09-14.11-37-51.h7d14b1f/README.md
       io.giantswarm.application.team: honeybadger
@@ -31121,4 +31148,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-14T11:49:52.444998177Z"
+generated: "2026-09-14T12:19:29.390202219Z"
