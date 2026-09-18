@@ -34,6 +34,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606
+    created: "2026-09-18T21:54:50.950971506Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 18f8652c28b403c260cde5f3d36f28a2f7fef3264c17bab7afca20d1cde5db38
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606.tgz
+    version: 2.34.1-dev.gpu-pool-zones-cache.2026-09-18.21-41-19.h68cf606
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.34.1-dev.align-now--tory-opt-in.2026-09-18.21-28-32.h1ea95a1.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.34.1-dev.align-now--tory-opt-in.2026-09-18.21-28-32.h1ea95a1/README.md
       io.giantswarm.application.team: honeybadger
@@ -36655,4 +36682,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-18T21:45:25.383547542Z"
+generated: "2026-09-18T21:54:50.946127864Z"
