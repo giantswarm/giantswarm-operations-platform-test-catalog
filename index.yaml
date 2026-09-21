@@ -142,6 +142,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea
+    created: "2026-09-21T13:21:40.501045382Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: d857075d7ac2cb8d92f93f86763f275d83f018305dd22c392105a44b954f8b74
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea.tgz
+    version: 2.49.1-dev.feat-unins--deployment.2026-09-21.13-07-12.hf6b81ea
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.48.10-dev.teemow-rep--ete-button.2026-09-21.12-32-06.hd3ad34a.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.48.10-dev.teemow-rep--ete-button.2026-09-21.12-32-06.hd3ad34a/README.md
       io.giantswarm.application.team: honeybadger
@@ -39681,4 +39708,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-21T13:15:14.919650966Z"
+generated: "2026-09-21T13:21:40.494494015Z"
