@@ -196,6 +196,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf
+    created: "2026-09-23T06:51:58.542422331Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 6949e5f7b1b15b6a724f96da9c29c461306c8cb7f48b17dec90cbd4a873f39aa
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf.tgz
+    version: 2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-40-00.ha81cebf
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-24-18.h6f073b4.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v2.58.6-dev.fix-sessions-quick-wins.2026-09-23.06-24-18.h6f073b4/README.md
       io.giantswarm.application.team: honeybadger
@@ -43652,4 +43679,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/schema-server-0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa.tgz
     version: 0.3.2-dev.renovate-architect-10-x.2026-08-18.13-36-12.h38355aa
-generated: "2026-09-23T06:37:36.379922644Z"
+generated: "2026-09-23T06:51:58.538510881Z"
