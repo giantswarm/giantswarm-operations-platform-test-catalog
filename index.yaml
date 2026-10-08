@@ -48136,6 +48136,28 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-app-2.14.66-dev.agentlab-extra-models.2026-09-01.14-12-55.h8cacb6e.tgz
     version: 2.14.66-dev.agentlab-extra-models.2026-09-01.14-12-55.h8cacb6e
+  docs-indexer-app:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/docs-indexer/issues
+      io.giantswarm.application.audience: giantswarm
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-indexer-app-4.3.18-rc.9.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/docs-indexer/refs/tags/v4.3.18-rc.9/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/docs-indexer/refs/tags/v4.3.18-rc.9/helm/docs-indexer-app/values.schema.json
+    apiVersion: v2
+    appVersion: 4.3.18-rc.9
+    created: "2026-10-08T04:05:30.913595366Z"
+    description: Indexes content for the docs search engine.
+    digest: e2d7cd9704cd3884ac3ffac734b99a45c56187799ff04c62fc1b563aad7c2512
+    home: https://github.com/giantswarm/docs-indexer
+    icon: https://s.giantswarm.io/app-icons/giantswarm/1/dark.svg
+    name: docs-indexer-app
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/docs-indexer-app-4.3.18-rc.9.tgz
+    version: 4.3.18-rc.9
   docs-proxy-app:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -55116,4 +55138,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.37.1-rc.1.tgz
     version: 0.37.1-rc.1
-generated: "2026-10-08T04:03:15.507393622Z"
+generated: "2026-10-08T04:05:30.912850151Z"
