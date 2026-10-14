@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "cortexPassword": {
+            "type": ["string", "null"]
+        },
+        "cortexUserName": {
+            "type": "string"
+        },
+        "groupID": {
+            "type": "integer"
+        },
+        "image": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "registry": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": ["string", "null"]
+                }
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "slackWebhookEndpoint": {
+            "type": ["string", "null"]
+        },
+        "userID": {
+            "type": "integer"
+        }
+    }
+}
