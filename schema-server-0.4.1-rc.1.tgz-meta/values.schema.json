@@ -1,0 +1,211 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "architecture": {
+            "type": "string",
+            "description": "Target CPU architecture for all pods of this chart. Empty imposes no constraint. `arm64` pins the pods to arm64 nodes, adding both the `kubernetes.io/arch` node selector and the toleration for the `kubernetes.io/arch=arm64:NoSchedule` taint that Giant Swarm arm64 node pools carry. Requires multi-arch images; an amd64-only image crash-loops with `exec format error` on an arm64 node."
+        },
+        "baseDomain": {
+            "type": "string"
+        },
+        "bootstrapMode": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "chartOperator": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "ciliumNetworkPolicy": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "cluster": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "clusterCA": {
+            "type": "string"
+        },
+        "clusterCIDR": {
+            "type": "string"
+        },
+        "clusterDNSIP": {
+            "type": "string"
+        },
+        "clusterID": {
+            "type": "string"
+        },
+        "gcpProject": {
+            "type": "string"
+        },
+        "global": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "description": "Global values shared between all subcharts",
+            "$comment": "Added automatically by 'helm schema' to allow this chart to be used as a Helm dependency, as this schema would otherwise not allow Helm's special 'global' values key."
+        },
+        "hostnames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "pullPolicy": {
+                    "type": "string"
+                },
+                "registry": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            }
+        },
+        "ingress": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "name": {
+            "type": "string"
+        },
+        "nodeSelector": {
+            "type": "object",
+            "description": "Node selector for all pods. Merged with `architecture`. Pinning to arm64 here also adds the arm64 taint toleration. A value that contradicts `architecture` fails the render.",
+            "additionalProperties": false
+        },
+        "provider": {
+            "type": "string"
+        },
+        "resources": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "limits": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeralStorage": {
+                            "type": "string"
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "requests": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeralStorage": {
+                            "type": "string"
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "route": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "annotations": {
+                    "type": "object",
+                    "additionalProperties": false
+                },
+                "enabled": {
+                    "type": "boolean"
+                },
+                "labels": {
+                    "type": "object",
+                    "additionalProperties": false
+                },
+                "parentRefs": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "https": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "group": {
+                                        "type": "string"
+                                    },
+                                    "kind": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "namespace": {
+                                        "type": "string"
+                                    },
+                                    "sectionName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "redirect": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "group": {
+                                        "type": "string"
+                                    },
+                                    "kind": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "namespace": {
+                                        "type": "string"
+                                    },
+                                    "sectionName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "subscriptionID": {
+            "type": "string"
+        },
+        "tolerations": {
+            "type": "array",
+            "description": "Tolerations for all pods. The arm64 toleration is added automatically when the pods are pinned to arm64."
+        }
+    }
+}
