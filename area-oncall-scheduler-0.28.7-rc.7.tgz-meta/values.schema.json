@@ -1,0 +1,396 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$defs": {
+        "_definitions.json": {
+            "definitions": {
+                "io.k8s.api.core.v1.ConfigMapKeySelector": {
+                    "type": "object",
+                    "description": "Selects a key from a ConfigMap.",
+                    "required": [
+                        "key"
+                    ],
+                    "properties": {
+                        "key": {
+                            "type": "string",
+                            "description": "The key to select."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+                        },
+                        "optional": {
+                            "type": "boolean",
+                            "description": "Specify whether the ConfigMap or its key must be defined"
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.EnvVar": {
+                    "type": "object",
+                    "description": "EnvVar represents an environment variable present in a Container.",
+                    "required": [
+                        "name"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "Name of the environment variable. Must be a C_IDENTIFIER."
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. \"$$(VAR_NAME)\" will produce the string literal \"$(VAR_NAME)\". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to \"\"."
+                        },
+                        "valueFrom": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.EnvVarSource",
+                            "description": "Source for the environment variable's value. Cannot be used if value is not empty."
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.EnvVarSource": {
+                    "type": "object",
+                    "description": "EnvVarSource represents a source for the value of an EnvVar.",
+                    "properties": {
+                        "configMapKeyRef": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.ConfigMapKeySelector",
+                            "description": "Selects a key of a ConfigMap."
+                        },
+                        "fieldRef": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.ObjectFieldSelector",
+                            "description": "Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs."
+                        },
+                        "resourceFieldRef": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.ResourceFieldSelector",
+                            "description": "Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported."
+                        },
+                        "secretKeyRef": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.SecretKeySelector",
+                            "description": "Selects a key of a secret in the pod's namespace"
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.ObjectFieldSelector": {
+                    "type": "object",
+                    "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
+                    "required": [
+                        "fieldPath"
+                    ],
+                    "properties": {
+                        "apiVersion": {
+                            "type": "string",
+                            "description": "Version of the schema the FieldPath is written in terms of, defaults to \"v1\"."
+                        },
+                        "fieldPath": {
+                            "type": "string",
+                            "description": "Path of the field to select in the specified API version."
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.ResourceFieldSelector": {
+                    "type": "object",
+                    "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
+                    "required": [
+                        "resource"
+                    ],
+                    "properties": {
+                        "containerName": {
+                            "type": "string",
+                            "description": "Container name: required for volumes, optional for env vars"
+                        },
+                        "divisor": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.apimachinery.pkg.api.resource.Quantity",
+                            "description": "Specifies the output format of the exposed resources, defaults to \"1\""
+                        },
+                        "resource": {
+                            "type": "string",
+                            "description": "Required: resource to select"
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.SecretKeySelector": {
+                    "type": "object",
+                    "description": "SecretKeySelector selects a key of a Secret.",
+                    "required": [
+                        "key"
+                    ],
+                    "properties": {
+                        "key": {
+                            "type": "string",
+                            "description": "The key of the secret to select from.  Must be a valid secret key."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Name of the referent. This field is effectively required, but due to backwards compatibility is allowed to be empty. Instances of this type with an empty value here are almost certainly wrong. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names"
+                        },
+                        "optional": {
+                            "type": "boolean",
+                            "description": "Specify whether the Secret or its key must be defined"
+                        }
+                    }
+                },
+                "io.k8s.apimachinery.pkg.api.resource.Quantity": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "BackoffLimit": {
+            "type": "integer"
+        },
+        "Cronjobs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "EndDateCmd": {
+                        "type": "string"
+                    },
+                    "Schedule": {
+                        "type": "string"
+                    },
+                    "StartDateCmd": {
+                        "type": "string"
+                    },
+                    "Suspend": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "Env": {
+            "type": "array",
+            "description": "Environment variables for the scheduler container. `Flags` entries can reference them as `\"${NAME}\"`. Use this with a Secret from `Secrets` to keep credentials out of the CronJob args.",
+            "items": {
+                "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.EnvVar"
+            }
+        },
+        "Flags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Installation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "V1": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "Registry": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "Domain": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Resources": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "limits": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeral-storage": {
+                            "type": "string",
+                            "description": "Ephemeral storage limit. Exceeding it evicts the job mid-run. The job writes to `/tmp` only when a `Flags` entry points the `output` flag there, so this is headroom rather than a measured figure."
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "requests": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeral-storage": {
+                            "type": "string",
+                            "description": "Ephemeral storage request. Bounds the `temp` emptyDir at `/tmp`, which exists only to give the read-only root filesystem a writable path."
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "Secrets": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "key": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "SuspendAll": {
+            "type": "boolean"
+        },
+        "VolumeMounts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "mountPath": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "subPath": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Volumes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "secret": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "key": {
+                                            "type": "string"
+                                        },
+                                        "path": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "secretName": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "baseDomain": {
+            "type": "string"
+        },
+        "bootstrapMode": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "chartOperator": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "ciliumNetworkPolicy": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "cluster": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "clusterCA": {
+            "type": "string"
+        },
+        "clusterCIDR": {
+            "type": "string"
+        },
+        "clusterDNSIP": {
+            "type": "string"
+        },
+        "clusterID": {
+            "type": "string"
+        },
+        "gcpProject": {
+            "type": "string"
+        },
+        "global": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "podSecurityStandards": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "enforced": {
+                            "type": "boolean"
+                        }
+                    }
+                }
+            }
+        },
+        "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "pullSecretName": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            }
+        },
+        "provider": {
+            "type": "string"
+        },
+        "subscriptionID": {
+            "type": "string"
+        }
+    }
+}
