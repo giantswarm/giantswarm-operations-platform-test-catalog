@@ -1436,6 +1436,33 @@ entries:
         - name: Support
           url: https://github.com/giantswarm/backstage/issues
       io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-3.16.3-r8b614cf4t20261021142035hd701883.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v3.16.3-r8b614cf4t20261021142035hd701883/README.md
+      io.giantswarm.application.team: honeybadger
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v3.16.3-r8b614cf4t20261021142035hd701883/helm/backstage/values.schema.json
+    apiVersion: v2
+    appVersion: 3.16.3-r8b614cf4t20261021142035hd701883
+    created: "2026-10-21T14:42:43.76801573Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.41.0
+    description: Backstage app provided by Giant Swarm
+    digest: 13f219a4f2568de53390a3f5fdb9efeb652de51b1471e464296ca4753ddc2dc4
+    home: https://github.com/giantswarm/backstage
+    icon: https://s.giantswarm.io/app-icons/backstage/1/icon.svg
+    name: backstage
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-3.16.3-r8b614cf4t20261021142035hd701883.tgz
+    version: 3.16.3-r8b614cf4t20261021142035hd701883
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/backstage/issues
+      io.giantswarm.application.logo: https://s.giantswarm.io/app-icons/backstage/1/logo.svg
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/backstage-3.16.3-r8b614cf4t20261021134400hd90c19e.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/backstage/refs/tags/v3.16.3-r8b614cf4t20261021134400hd90c19e/README.md
       io.giantswarm.application.team: honeybadger
@@ -99528,4 +99555,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.37.1-rc.1.tgz
     version: 0.37.1-rc.1
-generated: "2026-10-21T14:37:58.943840202Z"
+generated: "2026-10-21T14:42:43.761449544Z"
