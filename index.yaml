@@ -112238,6 +112238,36 @@ entries:
           url: https://github.com/kyverno/reports-server
       io.giantswarm.application.audience: all
       io.giantswarm.application.managed: "true"
+      io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-r4c02ffect20261029220044hdff0873.tgz-meta/main.yaml
+      io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/refs/tags/v0.1.4-r4c02ffect20261029220044hdff0873/README.md
+      io.giantswarm.application.team: shield
+      io.giantswarm.application.values-schema: https://raw.githubusercontent.com/giantswarm/reports-server-app/refs/tags/v0.1.4-r4c02ffect20261029220044hdff0873/helm/reports-server/values.schema.json
+    apiVersion: v2
+    appVersion: 0.1.4-r4c02ffect20261029220044hdff0873
+    created: "2026-10-29T22:01:12.100574374Z"
+    dependencies:
+    - name: reports-server
+      repository: ""
+      version: 0.1.6
+    description: A Giant Swarm app for deploying the Kyverno Reports Server.
+    digest: 394e49a593b8d78aa3270d19134f4ada862810a62c3842a12afcb10e9a2f68cb
+    home: https://github.com/giantswarm/reports-server-app
+    icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
+    name: reports-server
+    sources:
+    - https://github.com/kyverno/reports-server
+    urls:
+    - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-r4c02ffect20261029220044hdff0873.tgz
+    version: 0.1.4-r4c02ffect20261029220044hdff0873
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Support
+          url: https://github.com/giantswarm/reports-server-app/issues
+        - name: Upstream project
+          url: https://github.com/kyverno/reports-server
+      io.giantswarm.application.audience: all
+      io.giantswarm.application.managed: "true"
       io.giantswarm.application.metadata: https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/reports-server-0.1.4-r4c02ffect20261027222537hd2f181a.tgz-meta/main.yaml
       io.giantswarm.application.readme: https://raw.githubusercontent.com/giantswarm/reports-server-app/refs/tags/v0.1.4-r4c02ffect20261027222537hd2f181a/README.md
       io.giantswarm.application.team: shield
@@ -115962,4 +115992,4 @@ entries:
     urls:
     - https://giantswarm.github.io/giantswarm-operations-platform-test-catalog/web-assets-app-0.37.1-rc.1.tgz
     version: 0.37.1-rc.1
-generated: "2026-10-29T21:47:13.061102637Z"
+generated: "2026-10-29T22:01:12.091626968Z"
