@@ -1,0 +1,388 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$defs": {
+        "_definitions.json": {
+            "definitions": {
+                "io.k8s.api.core.v1.Toleration": {
+                    "type": "object",
+                    "description": "The pod this Toleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator <operator>.",
+                    "properties": {
+                        "effect": {
+                            "type": "string",
+                            "description": "Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute."
+                        },
+                        "key": {
+                            "type": "string",
+                            "description": "Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys."
+                        },
+                        "operator": {
+                            "type": "string",
+                            "description": "Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category."
+                        },
+                        "tolerationSeconds": {
+                            "type": "integer",
+                            "description": "TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.",
+                            "format": "int64"
+                        },
+                        "value": {
+                            "type": "string",
+                            "description": "Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string."
+                        }
+                    }
+                },
+                "io.k8s.api.core.v1.TopologySpreadConstraint": {
+                    "type": "object",
+                    "description": "TopologySpreadConstraint specifies how to spread matching pods among the given topology.",
+                    "required": [
+                        "maxSkew",
+                        "topologyKey",
+                        "whenUnsatisfiable"
+                    ],
+                    "properties": {
+                        "labelSelector": {
+                            "$ref": "#/$defs/_definitions.json/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.LabelSelector",
+                            "description": "LabelSelector is used to find matching pods. Pods that match this label selector are counted to determine the number of pods in their corresponding topology domain."
+                        },
+                        "matchLabelKeys": {
+                            "type": "array",
+                            "description": "MatchLabelKeys is a set of pod label keys to select the pods over which spreading will be calculated. The keys are used to lookup values from the incoming pod labels, those key-value labels are ANDed with labelSelector to select the group of existing pods over which spreading will be calculated for the incoming pod. The same key is forbidden to exist in both MatchLabelKeys and LabelSelector. MatchLabelKeys cannot be set when LabelSelector isn't set. Keys that don't exist in the incoming pod labels will be ignored. A null or empty list means only match against labelSelector.\n\nThis is a beta field and requires the MatchLabelKeysInPodTopologySpread feature gate to be enabled (enabled by default).",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "maxSkew": {
+                            "type": "integer",
+                            "description": "MaxSkew describes the degree to which pods may be unevenly distributed. When `whenUnsatisfiable=DoNotSchedule`, it is the maximum permitted difference between the number of matching pods in the target topology and the global minimum. The global minimum is the minimum number of matching pods in an eligible domain or zero if the number of eligible domains is less than MinDomains. For example, in a 3-zone cluster, MaxSkew is set to 1, and pods with the same labelSelector spread as 2/2/1: In this case, the global minimum is 1. | zone1 | zone2 | zone3 | |  P P  |  P P  |   P   | - if MaxSkew is 1, incoming pod can only be scheduled to zone3 to become 2/2/2; scheduling it onto zone1(zone2) would make the ActualSkew(3-1) on zone1(zone2) violate MaxSkew(1). - if MaxSkew is 2, incoming pod can be scheduled onto any zone. When `whenUnsatisfiable=ScheduleAnyway`, it is used to give higher precedence to topologies that satisfy it. It's a required field. Default value is 1 and 0 is not allowed.",
+                            "format": "int32"
+                        },
+                        "minDomains": {
+                            "type": "integer",
+                            "description": "MinDomains indicates a minimum number of eligible domains. When the number of eligible domains with matching topology keys is less than minDomains, Pod Topology Spread treats \"global minimum\" as 0, and then the calculation of Skew is performed. And when the number of eligible domains with matching topology keys equals or greater than minDomains, this value has no effect on scheduling. As a result, when the number of eligible domains is less than minDomains, scheduler won't schedule more than maxSkew Pods to those domains. If value is nil, the constraint behaves as if MinDomains is equal to 1. Valid values are integers greater than 0. When value is not nil, WhenUnsatisfiable must be DoNotSchedule.\n\nFor example, in a 3-zone cluster, MaxSkew is set to 2, MinDomains is set to 5 and pods with the same labelSelector spread as 2/2/2: | zone1 | zone2 | zone3 | |  P P  |  P P  |  P P  | The number of domains is less than 5(MinDomains), so \"global minimum\" is treated as 0. In this situation, new pod with the same labelSelector cannot be scheduled, because computed skew will be 3(3 - 0) if new Pod is scheduled to any of the three zones, it will violate MaxSkew.",
+                            "format": "int32"
+                        },
+                        "nodeAffinityPolicy": {
+                            "type": "string",
+                            "description": "NodeAffinityPolicy indicates how we will treat Pod's nodeAffinity/nodeSelector when calculating pod topology spread skew. Options are: - Honor: only nodes matching nodeAffinity/nodeSelector are included in the calculations. - Ignore: nodeAffinity/nodeSelector are ignored. All nodes are included in the calculations.\n\nIf this value is nil, the behavior is equivalent to the Honor policy."
+                        },
+                        "nodeTaintsPolicy": {
+                            "type": "string",
+                            "description": "NodeTaintsPolicy indicates how we will treat node taints when calculating pod topology spread skew. Options are: - Honor: nodes without taints, along with tainted nodes for which the incoming pod has a toleration, are included. - Ignore: node taints are ignored. All nodes are included.\n\nIf this value is nil, the behavior is equivalent to the Ignore policy."
+                        },
+                        "topologyKey": {
+                            "type": "string",
+                            "description": "TopologyKey is the key of node labels. Nodes that have a label with this key and identical values are considered to be in the same topology. We consider each <key, value> as a \"bucket\", and try to put balanced number of pods into each bucket. We define a domain as a particular instance of a topology. Also, we define an eligible domain as a domain whose nodes meet the requirements of nodeAffinityPolicy and nodeTaintsPolicy. e.g. If TopologyKey is \"kubernetes.io/hostname\", each Node is a domain of that topology. And, if TopologyKey is \"topology.kubernetes.io/zone\", each zone is a domain of that topology. It's a required field."
+                        },
+                        "whenUnsatisfiable": {
+                            "type": "string",
+                            "description": "WhenUnsatisfiable indicates how to deal with a pod if it doesn't satisfy the spread constraint. - DoNotSchedule (default) tells the scheduler not to schedule it. - ScheduleAnyway tells the scheduler to schedule the pod in any location,\n  but giving higher precedence to topologies that would help reduce the\n  skew.\nA constraint is considered \"Unsatisfiable\" for an incoming pod if and only if every possible node assignment for that pod would violate \"MaxSkew\" on some topology. For example, in a 3-zone cluster, MaxSkew is set to 1, and pods with the same labelSelector spread as 3/1/1: | zone1 | zone2 | zone3 | | P P P |   P   |   P   | If WhenUnsatisfiable is set to DoNotSchedule, incoming pod can only be scheduled to zone2(zone3) to become 3/2/1(3/1/2) as ActualSkew(2-1) on zone2(zone3) satisfies MaxSkew(1). In other words, the cluster can still be imbalanced, but scheduler won't make it *more* imbalanced. It's a required field."
+                        }
+                    }
+                },
+                "io.k8s.apimachinery.pkg.apis.meta.v1.LabelSelector": {
+                    "type": "object",
+                    "description": "A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.",
+                    "properties": {
+                        "matchExpressions": {
+                            "type": "array",
+                            "description": "matchExpressions is a list of label selector requirements. The requirements are ANDed.",
+                            "items": {
+                                "$ref": "#/$defs/_definitions.json/definitions/io.k8s.apimachinery.pkg.apis.meta.v1.LabelSelectorRequirement"
+                            }
+                        },
+                        "matchLabels": {
+                            "type": "object",
+                            "description": "matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed.",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "io.k8s.apimachinery.pkg.apis.meta.v1.LabelSelectorRequirement": {
+                    "type": "object",
+                    "description": "A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.",
+                    "required": [
+                        "key",
+                        "operator"
+                    ],
+                    "properties": {
+                        "key": {
+                            "type": "string",
+                            "description": "key is the label key that the selector applies to."
+                        },
+                        "operator": {
+                            "type": "string",
+                            "description": "operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist."
+                        },
+                        "values": {
+                            "type": "array",
+                            "description": "values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "architecture": {
+            "type": "string",
+            "description": "Target CPU architecture for this workload. Empty imposes no constraint. `arm64` pins the pod to arm64 nodes, adding both the `kubernetes.io/arch` node selector and the toleration for the `kubernetes.io/arch=arm64:NoSchedule` taint that Giant Swarm arm64 node pools carry. Both are required, so this single value sets both. Requires a multi-arch container image; an amd64-only image will crash-loop with `exec format error` on an arm64 node.",
+            "enum": [
+                "",
+                "amd64",
+                "arm64"
+            ]
+        },
+        "baseDomain": {
+            "type": "string"
+        },
+        "bootstrapMode": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "chartOperator": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "ciliumNetworkPolicy": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "cluster": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "clusterCA": {
+            "type": "string"
+        },
+        "clusterCIDR": {
+            "type": "string"
+        },
+        "clusterDNSIP": {
+            "type": "string"
+        },
+        "clusterID": {
+            "type": "string"
+        },
+        "externalDNSIP": {
+            "type": "string"
+        },
+        "gcpProject": {
+            "type": "string"
+        },
+        "global": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "description": "Global values shared between all subcharts and the platform.",
+            "additionalProperties": true,
+            "properties": {
+                "podSecurityStandards": {
+                    "type": "object",
+                    "additionalProperties": true
+                }
+            }
+        },
+        "helm": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "image": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "registry": {
+                    "type": "string"
+                }
+            }
+        },
+        "managementCluster": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "namespace": {
+            "type": "string"
+        },
+        "nodeSelector": {
+            "type": "object",
+            "description": "Node selector for pod scheduling. Merged with `architecture`. Pinning to arm64 here rather than through `architecture` also adds the arm64 taint toleration, so either route is safe. A value that contradicts `architecture` fails the render.",
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "provider": {
+            "type": "string"
+        },
+        "resources": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "limits": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeralStorage": {
+                            "type": "string"
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "requests": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "cpu": {
+                            "type": "string"
+                        },
+                        "ephemeralStorage": {
+                            "type": "string"
+                        },
+                        "memory": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "route": {
+            "type": "object",
+            "description": "Gateway API Route configuration",
+            "additionalProperties": false,
+            "properties": {
+                "additionalRules": {
+                    "type": "array",
+                    "description": "Additional custom rules that can be added to the route"
+                },
+                "annotations": {
+                    "type": "object",
+                    "description": "Additional annotations to add to the route",
+                    "additionalProperties": false
+                },
+                "enabled": {
+                    "type": "boolean",
+                    "description": "Enable Gateway API HTTPRoute"
+                },
+                "filters": {
+                    "type": "array",
+                    "description": "Filters to apply to requests matching this rule"
+                },
+                "hostnames": {
+                    "type": "array",
+                    "description": "Hostnames for the route"
+                },
+                "kind": {
+                    "type": "string",
+                    "description": "Set the route kind Valid options are GRPCRoute, HTTPRoute, TCPRoute, TLSRoute, UDPRoute"
+                },
+                "labels": {
+                    "type": "object",
+                    "description": "Additional labels to add to the route",
+                    "additionalProperties": false
+                },
+                "matches": {
+                    "type": "array",
+                    "description": "Matching rules for the route",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "path": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "value": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Override the route name (defaults to .Values.name)"
+                },
+                "parentRefs": {
+                    "type": "array",
+                    "description": "Parent references (Gateway) for the route"
+                },
+                "securityPolicy": {
+                    "type": "object",
+                    "description": "Envoy Gateway SecurityPolicy configuration",
+                    "additionalProperties": false,
+                    "properties": {
+                        "annotations": {
+                            "type": "object",
+                            "description": "Additional annotations for SecurityPolicy",
+                            "additionalProperties": false
+                        },
+                        "enabled": {
+                            "type": "boolean",
+                            "description": "Enable SecurityPolicy for the route"
+                        },
+                        "labels": {
+                            "type": "object",
+                            "description": "Additional labels for SecurityPolicy",
+                            "additionalProperties": false
+                        }
+                    }
+                }
+            }
+        },
+        "subscriptionID": {
+            "type": "string"
+        },
+        "tolerations": {
+            "type": "array",
+            "description": "Tolerations for pod scheduling. Merged with the toleration that `architecture: arm64` adds.",
+            "items": {
+                "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.Toleration"
+            }
+        },
+        "topologySpreadConstraints": {
+            "type": "array",
+            "description": "Topology spread constraints for the pods. A constraint without a `labelSelector` gets the chart's pod selector labels. The default spreads the replicas over nodes as a preference (`ScheduleAnyway`): with a single eligible node both pods still run there rather than one staying Pending; `whenUnsatisfiable: DoNotSchedule` insists on the spread. `matchLabelKeys` counts only the pods of the current ReplicaSet, so a rolling update does not pack the new pods onto one node while the old ones hold the others. `[]` renders no constraint.",
+            "items": {
+                "$ref": "#/$defs/_definitions.json/definitions/io.k8s.api.core.v1.TopologySpreadConstraint",
+                "type": "object",
+                "properties": {
+                    "matchLabelKeys": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "maxSkew": {
+                        "type": "integer"
+                    },
+                    "topologyKey": {
+                        "type": "string"
+                    },
+                    "whenUnsatisfiable": {
+                        "type": "string"
+                    }
+                },
+                "unevaluatedProperties": false
+            }
+        }
+    }
+}
