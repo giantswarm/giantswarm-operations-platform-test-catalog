@@ -1,0 +1,106 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "catchAll": {
+            "type": "object",
+            "description": "Every path that no redirect matches goes to the same path on this host.",
+            "properties": {
+                "hostname": {
+                    "type": "string"
+                },
+                "statusCode": {
+                    "type": "integer",
+                    "enum": [
+                        301,
+                        302
+                    ]
+                }
+            },
+            "required": [
+                "hostname",
+                "statusCode"
+            ]
+        },
+        "hostnames": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "hsts": {
+            "type": "string",
+            "description": "Strict-Transport-Security header set on every redirect. Empty sets none."
+        },
+        "redirects": {
+            "type": "array",
+            "description": "Paths redirected to a fixed URL. Each entry is one HTTPRoute rule, and a route holds at most 16 rules including the catch-all.",
+            "maxItems": 15,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "hostname": {
+                        "type": "string"
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "paths": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "statusCode": {
+                        "type": "integer",
+                        "enum": [
+                            301,
+                            302
+                        ]
+                    }
+                },
+                "required": [
+                    "hostname",
+                    "path",
+                    "paths",
+                    "statusCode"
+                ]
+            }
+        },
+        "route": {
+            "type": "object",
+            "properties": {
+                "annotations": {
+                    "type": "object"
+                },
+                "labels": {
+                    "type": "object"
+                },
+                "parentRefs": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "group": {
+                                "type": "string"
+                            },
+                            "kind": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "namespace": {
+                                "type": "string"
+                            },
+                            "sectionName": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
